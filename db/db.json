@@ -11,8 +11,6 @@
             ]
         },
 
-        }
-        ,
 
         {
             "Name": "Laps",
@@ -33,8 +31,7 @@
                     "price": 10000
                 }
             ]
-<<<<<<< Updated upstream
-=======
+
         },
         {
             "Name": "mean's sweater",
@@ -45,26 +42,9 @@
                     "price": 10000
                 }
             ]
->>>>>>> Stashed changes
+
         }
     ]
 
-},
-{
-    "Name": "mean's sweater",
-    "Description": "",
-    "Products": [
-        {
-            "Name": "",
-            "price": 10000
-        
-            
-        ]
-        }
-    ]
-}
-    ]
-}
    
-
 }
