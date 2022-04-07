@@ -43,7 +43,7 @@
                 }
             ]
 
-        },
+        },{
         
             "Name": "Womens's sweater",
              "Description": "",
@@ -57,6 +57,18 @@
           {
 
             "Name": "toys",
+
+            "Description": "",
+            "Products": [
+                {
+                    "Name": "",
+                    "price": 10000
+                }
+            ]
+        },
+        {
+
+            "Name": "toys for kids",
 
             "Description": "",
             "Products": [
