@@ -8,10 +8,8 @@
                     "Name": "",
                     "price": 100
                 }
-               
             ]
-        }
-        ,
+        },
         {
             "Name": "Laps",
             "Description": "",
@@ -21,18 +19,16 @@
                     "price": 20000
                 }
             ]
-        }
-  ,
-  {
-    "Name": "Cameras",
-    "Description": "",
-    "Products": [
+        },
         {
-            "Name": "",
-            "price": 10000
+            "Name": "Cameras",
+            "Description": "",
+            "Products": [
+                {
+                    "Name": "",
+                    "price": 10000
+                }
+            ]
         }
     ]
 }
-    ]
-}
-   
