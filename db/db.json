@@ -43,8 +43,7 @@
                 }
             ]
 
-        },{
-        
+        },
         {
         
             "Name": "Womens's sweater",
@@ -71,13 +70,21 @@
         },
         {
 
-            "Name": "toys for kids",
-
+            "Name": "scanners",
             "Description": "",
             "Products": [
                 {
                     "Name": "",
-                    "price": 10000
+                    "price": 2000
+       },
+       {
+         
+            "Name": "toys for kids",
+            "Description": "",
+            "Products": [
+                {
+                    "Name": "",
+                    "price": 1000
                 }
             ]
         }
