@@ -1,94 +1,84 @@
 {
     "Categories": [
-        {
-            "Name": "Monitors",
-            "Description": "",
-            "Products": [
-                {
-                    "Name": "",
-                    "price": 100
-                }
-            ]
-        },
-
-
-        {
-            "Name": "Laps",
-            "Description": "",
-            "Products": [
-                {
-                    "Name": "",
-                    "price": 20000
-                }
-            ]
-        },
-        {
-            "Name": "Cameras",
-            "Description": "",
-            "Products": [
-                {
-                    "Name": "",
-                    "price": 10000
-                }
-            ]
-
-        },
-        {
-            "Name": "mean's sweater",
-            "Description": "",
-            "Products": [
-                {
-                    "Name": "",
-                    "price": 10000
-                }
-            ]
-
-        },
-        {
-        
-            "Name": "Womens's sweater",
-             "Description": "",
-            "Products": [
-                {
-                    "Name": "",
-                    "price": 10000
-                }
-            ]
-        },
-          
-        {
-
-            "Name": "toys",
-
-            "Description": "",
-            "Products": [
-                {
-                    "Name": "",
-                    "price": 10000
-                }
-            ]
-        },
-        {
-
-            "Name": "scanners",
-            "Description": "",
-            "Products": [
-                {
-                    "Name": "",
-                    "price": 2000
-       },
-       {
-         
-            "Name": "toys for kids",
-            "Description": "",
-            "Products": [
-                {
-                    "Name": "",
-                    "price": 1000
-                }
-            ]
-        }
+      {
+        "Name": "Monitors",
+        "Description": "",
+        "Products": [
+          {
+            "Name": "",
+            "price": 100
+          }
+        ]
+      },
+      {
+        "Name": "Laps",
+        "Description": "",
+        "Products": [
+          {
+            "Name": "",
+            "price": 20000
+          }
+        ]
+      },
+      {
+        "Name": "Cameras",
+        "Description": "",
+        "Products": [
+          {
+            "Name": "",
+            "price": 10000
+          }
+        ]
+      },
+      {
+        "Name": "mean's sweater",
+        "Description": "",
+        "Products": [
+          {
+            "Name": "",
+            "price": 10000
+          }
+        ]
+      },
+      {
+        "Name": "Womens's sweater",
+        "Description": "",
+        "Products": [
+          {
+            "Name": "",
+            "price": 10000
+          }
+        ]
+      },
+      {
+        "Name": "toys",
+        "Description": "",
+        "Products": [
+          {
+            "Name": "",
+            "price": 10000
+          }
+        ]
+      },
+      {
+        "Name": "scanners",
+        "Description": "",
+        "Products": [
+          {
+            "Name": "",
+            "price": 2000
+          }
+        ]
+      },
+      {
+        "Name": "toys for kids",
+        "Description": "",
+        "Products": [
+          {
+            "Name": "",
+            "price": 1000
+          }
+        ]
+      }
     ]
-
-   
 }
