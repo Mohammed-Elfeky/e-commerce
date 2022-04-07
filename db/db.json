@@ -7,19 +7,32 @@
                 {
                     "Name": "",
                     "price": 100
-                },
+                }
+               
+            ]
+        }
+        ,
+        {
+            "Name": "Laps",
+            "Description": "",
+            "Products": [
                 {
-                    "Name": "Laps",
-                    "Description": "",
-                    "Products": [
-                        {
-                            "Name": "",
-                            "price": 20000
-                        }
-                    ]
+                    "Name": "",
+                    "price": 20000
                 }
             ]
         }
+  ,
+  {
+    "Name": "Cameras",
+    "Description": "",
+    "Products": [
+        {
+            "Name": "",
+            "price": 10000
+        }
+    ]
+}
     ]
 }
    
