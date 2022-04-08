@@ -1,72 +1,89 @@
 {
     "Categories": [
-        {
-            "Name": "Monitors",
-            "Description": "",
+        {   "ID":3,
+            "Name": "Furniture",
+            "Description": "furniture category",
             "Products": [
+                {   "ID":21,
+                    "Name": "Dressing Table",
+                    "price": "40$",
+                    "brand": "Infiniwe",
+                    "images":["assets/images/dressingtable_1.jpg","assets/images/dressingtable_2.jpg","assets/images/dressingtable_3.jpg"],
+                    "Description": "infiniwe Dressing Table Makeup Vanity Desk Small Apartment Furniture-Home Office Console Simple Writing Desk Learning Computer Desk for Narrow Small"
+                },
                 {
-                    "Name": "",
-                    "price": 100
-                }
-            ]
-        },
-
-
-        {
-            "Name": "Laps",
-            "Description": "",
-            "Products": [
+                    "ID":22,
+                    "Name": "sofa",
+                    "price": "60$",
+                    "brand": "Amazon",
+                    "images":["assets/images/sofa_1.jpg","assets/images/sofa_2.jpg","assets/images/sofa_3.jpg"],
+                    "Description": "Rivet Frederick Mid-Century Channel Tufted Velvet Sofa Couch, 77.5'W, Navy Blue"
+                },
+                {   
+                    "ID":23,
+                    "Name": "Bed",
+                    "price": "150$",
+                    "brand": "Zinus",
+                    "images":["assets/images/bed_1.jpg","assets/images/bed_2.jpg","assets/images/bed_3.jpg"],
+                    "Description": "ZINUS Mia Metal Platform Bed Frame with Headboard / Wood Slat Support / No Box Spring Needed / Easy Assembly, King"
+                },
                 {
-                    "Name": "",
-                    "price": 20000
-                }
-            ]
-        },
-        {
-            "Name": "Cameras",
-            "Description": "",
-            "Products": [
+                    "ID":24,
+                    "Name": "Office chair",
+                    "price": "120$",
+                    "brand": "Ergonomic",
+                    "images":["assets/images/officechair_1.jpg","assets/images/officechair_2.jpg","assets/images/officechair_3.jpg"],
+                    "Description": " Featuring reliable ergonomic support, Articulate comes with a breathable mesh back, passive lumbar support, and generously padded and contoured 6” thick mesh seat cushion"
+                },
                 {
-                    "Name": "",
-                    "price": 10000
-                }
-            ]
-
-        },
-        {
-            "Name": "mean's sweater",
-            "Description": "",
-            "Products": [
+                    "ID":25,
+                    "Name": "Office desk",
+                    "price": "120$",
+                    "brand": "Joiscope",
+                    "images":["assets/images/officedesk_1.jpg","assets/images/officedesk_2.jpg","assets/images/officedesk_3.jpg"],
+                    "Description": "JOISCOPE Home Office Computer Desk,Small Study Writing Desk with Wooden Storage Shelf,2-Tier Industrial Morden Laptop Table with Splice Board,47 inches"
+                },
                 {
-                    "Name": "",
-                    "price": 10000
-                }
-            ]
-
-        },
-        
-            "Name": "Womens's sweater",
-             "Description": "",
-            "Products": [
+                    "ID":26,
+                    "Name": "Shoe organizer",
+                    "price": "35$",
+                    "brand": "Tribesigns",
+                    "images":["assets/images/shoeorganizer_1.jpg","assets/images/shoeorganizer_2.jpg","assets/images/shoeorganizer_3.jpg"],
+                    "Description": "Shoe Rack Shoe Shelf Shoe Storage Organizer with Side Hooks For Entryway, 24-30 Pairs Metal Shoe Rack Taller Shoes Boots Organizer"
+                },
                 {
-                    "Name": "",
-                    "price": 10000
-                }
-            ]
-        },
-          {
-
-            "Name": "toys",
-
-            "Description": "",
-            "Products": [
+                    "ID":27,
+                    "Name": "Night stands",
+                    "price": "149$",
+                    "brand": "Nathan James",
+                    "images":["assets/images/nightstand_1.jpg","assets/images/nightstand_2.jpg","assets/images/nightstand_3.jpg"],
+                    "Description": "Nathan James Harper Mid-Century Side, 2-Drawer Nightstand, Accent or End Table with Storage, Wood, Black/Brown"
+                },
                 {
-                    "Name": "",
-                    "price": 10000
+                    "ID":28,
+                    "Name": "Glass table",
+                    "price": "125$",
+                    "brand": "HAYOSNFO",
+                    "Description": "Round Glass Kitchen Dining Table Modern Leisure Table with Wood Legs for Kitchen Dining Room & Living Room 31.5'"
+                    
+                },
+                {    "ID":29,
+                    "Name": "Chair",
+                    "price": "300$",
+                    "brand": " Christopher Knight Home Store",
+                    "Description": "Mason Mid-Century Modern Tuft Back Recliner (Qty of 1, Fabric/Muted Yellow)"
+                    
+                },
+                {
+                    "ID":30,
+                    "Name": "TV table",
+                    "price": "180$",
+                    "brand": " SIMPLIHOME",
+                    "Description": "SIMPLIHOME Hunter SOLID WOOD Universal TV Media Stand, 60 inch Wide, Modern Industrial, Living Room Entertainment Center, with Storage, for Flat Screen TVs up to 70 inches in Natural"
+                    
                 }
+
             ]
         }
     ]
-
-   
 }
