@@ -1,84 +1,723 @@
 {
-    "Categories": [
-      {
-        "Name": "Monitors",
-        "Description": "",
-        "Products": [
-          {
-            "Name": "",
-            "price": 100
-          }
-        ]
-      },
-      {
-        "Name": "Laps",
-        "Description": "",
-        "Products": [
-          {
-            "Name": "",
-            "price": 20000
-          }
-        ]
-      },
-      {
-        "Name": "Cameras",
-        "Description": "",
-        "Products": [
-          {
-            "Name": "",
-            "price": 10000
-          }
-        ]
-      },
-      {
-        "Name": "mean's sweater",
-        "Description": "",
-        "Products": [
-          {
-            "Name": "",
-            "price": 10000
-          }
-        ]
-      },
-      {
-        "Name": "Womens's sweater",
-        "Description": "",
-        "Products": [
-          {
-            "Name": "",
-            "price": 10000
-          }
-        ]
-      },
-      {
-        "Name": "toys",
-        "Description": "",
-        "Products": [
-          {
-            "Name": "",
-            "price": 10000
-          }
-        ]
-      },
-      {
-        "Name": "scanners",
-        "Description": "",
-        "Products": [
-          {
-            "Name": "",
-            "price": 2000
-          }
-        ]
-      },
-      {
-        "Name": "toys for kids",
-        "Description": "",
-        "Products": [
-          {
-            "Name": "",
-            "price": 1000
-          }
-        ]
-      }
-    ]
+  "Categories": [
+    {
+      "id": 1,
+      "Name": "Office Supplies",
+      "Description": "used regularly in an office environment to perform departmental personnel's daily work assignments."
+    },
+    {
+      "id": 2,
+      "Name": "Men's Sweaters",
+      "Description": ""
+    },
+    {
+      "ID": 3,
+      "Name": "Furniture",
+      "Description": "furniture category"
+    },
+    {
+      "id": 4,
+      "Name": "Lap_tops",
+      "Description": "Computer_Electronic"
+    }
+  ],
+  "Products": [
+    {
+      "id": 1,
+      "CategorieId": 1,
+      "color": "gray",
+      "numberOfAvailableItems": 10,
+      "numberOfSoldItems": 5,
+      "inSale": false,
+      "priceInSale": 0,
+      "images": [
+        "assets/images/RotaryPincle_1",
+        "assets/images/RotaryPincle_2",
+        "assets/images/RotaryPincle_3"
+      ],
+      "Name": "Rotary Pencil Sharpener",
+      "price": 9.9,
+      "brand": "Amazon Basics",
+      "Description": "Color:Black, Material:ABS 79%- metal 13%- other 8%, Model Number:E0620,Power Source Type:Manual, Size:4.92' x 5.20' x 2.87'"
+    },
+    {
+      "id": 2,
+      "CategorieId": 1,
+      "color": "black",
+      "numberOfAvailableItems": 15,
+      "numberOfSoldItems": 10,
+      "inSale": true,
+      "priceInSale": 30.0,
+      "images": [
+        "assets/images/fileOrganizer_1",
+        "assets/images/fileOrganizer_2",
+        "assets/images/fileOrganizer_3"
+      ],
+      "Name": "File Organizer",
+      "price": 38.18,
+      "brand": "Amazon Basics",
+      "Description": "File organizer for storing documents, reports, personal paperwork, and more. Sturdy corrugated cardboard construction"
+    },
+    {
+      "id": 3,
+      "CategorieId": 1,
+      "color": "black",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 5,
+      "inSale": true,
+      "priceInSale": 19.99,
+      "images": [
+        "assets/images/paperTrim_1",
+        "assets/images/paperTrim_2",
+        "assets/images/paperTrim_3"
+      ],
+      "Name": "Paper Trimmer",
+      "price": 25.66,
+      "brand": "Amazon Basics",
+      "Description": "Everyday portable paper trimmer with 12-inch guillotine-style, self-sharpening steel blade; ideal for home or office"
+    },
+    {
+      "id": 4,
+      "CategorieId": 1,
+      "color": "black",
+      "numberOfAvailableItems": 12,
+      "numberOfSoldItems": 6,
+      "inSale": false,
+      "priceInSale": 0,
+      "images": [
+        "assets/images/stapler_1",
+        "assets/images/stapler_2",
+        "assets/images/stapler_3"
+      ],
+      "Name": "Stapler",
+      "price": 6.57,
+      "brand": "Amazon Basics",
+      "Description": "Desktop office stapler that holds up to 200 staples; 10 sheet stapling capacity. Color:Black, Material:Metal-Rubber"
+    },
+    {
+      "id": 5,
+      "CategorieId": 1,
+      "color": "white",
+      "numberOfAvailableItems": 16,
+      "numberOfSoldItems": 8,
+      "inSale": true,
+      "priceInSale": 80.0,
+      "images": [
+        "assets/images/projector_1",
+        "assets/images/projector_2",
+        "assets/images/projector_3"
+      ],
+      "Name": "Mini Projector",
+      "price": 89.66,
+      "brand": "Auking",
+      "Description": "Upgraded mini projector equipped with 2000:1 contrast ratio, supported 1080p resolution, brings you a 35% brighter images than similar projectors in market. It provides you with a premium home cinema experience with the bigger screen and clearer image."
+    },
+    {
+      "id": 6,
+      "CategorieId": 1,
+      "color": "white",
+      "numberOfAvailableItems": 6,
+      "numberOfSoldItems": 4,
+      "inSale": false,
+      "priceInSale": 0,
+      "images": [
+        "assets/images/thermal_1",
+        "assets/images/thermal_2",
+        "assets/images/thermal_3"
+      ],
+      "Name": "Thermal Laminator Machine",
+      "price": 21.83,
+      "brand": "Amazon Basics",
+      "Description": "Laminates documents up to 9 inches wide; compatible with letter, legal, business-card, and photo-size papers. Color:white."
+    },
+    {
+      "id": 7,
+      "CategorieId": 1,
+      "color": "black",
+      "numberOfAvailableItems": 14,
+      "numberOfSoldItems": 7,
+      "inSale": true,
+      "priceInSale": 10.0,
+      "images": [
+        "assets/images/calculator_1",
+        "assets/images/calculator_2",
+        "assets/images/calculator_3"
+      ],
+      "Name": "Scientific Calculator",
+      "price": 13.83,
+      "brand": "Texas Instruments",
+      "Description": "Robust, professional grade scientific calculator. Logs and antilogs. It has 2-line display shows entry and calculated result at same time."
+    },
+    {
+      "id": 8,
+      "CategorieId": 1,
+      "color": "white",
+      "numberOfAvailableItems": 10,
+      "numberOfSoldItems": 7,
+      "inSale": false,
+      "priceInSale": 0,
+      "images": [
+        "assets/images/printer_1",
+        "assets/images/printer_2",
+        "assets/images/printer_3"
+      ],
+      "Name": "Wireless Color Printer",
+      "price": 119.89,
+      "brand": "HP",
+      "Description": "BEST FOR BASIC PRINTING - Print basic color documents like recipes, forms and travel documents. KEY FEATURES - Print, copy and scan in color, auto document feeder, mobile fax, mobile and wireless printing.EASY SETUP - Get started fast on any device with the HP Smart app that guides you step by step."
+    },
+    {
+      "id": 9,
+      "CategorieId": 1,
+      "color": "silver",
+      "numberOfAvailableItems": 8,
+      "numberOfSoldItems": 8,
+      "inSale": true,
+      "priceInSale": 20.0,
+      "images": [
+        "assets/images/riser_1",
+        "assets/images/riser_2",
+        "assets/images/riser_3"
+      ],
+      "Name": "Aluminum Computer Riser",
+      "price": 24.64,
+      "brand": "SOUNDANCE",
+      "Description": "Cooling better and keep desktop organized - The ventilated elevator desk stand only has two holder hands but not a whole flat, so there is more space to enable the heat to vent and keep your notebook computer from overheating. Also, you can organize your office items such as keyboard and mouse under the thin stand."
+    },
+    {
+      "id": 10,
+      "CategorieId": 1,
+      "color": "black",
+      "numberOfAvailableItems": 5,
+      "numberOfSoldItems": 2,
+      "inSale": false,
+      "priceInSale": 0,
+      "images": [
+        "assets/images/comfortSeat_1",
+        "assets/images/comfortSeat_2",
+        "assets/images/comfortSeat_3"
+      ],
+      "Name": "Comfort Seat Cushion",
+      "price": 49.95,
+      "brand": "Everlasting Comfort",
+      "Description": "Simple Solution to Your Uncomfortable Chair Problem: Made with pure memory foam, our pressure relief seat cushion uses your own body heat to adapt to your curves, giving you the support your current office chair lacks."
+    },
+    {
+      "id": 11,
+      "Name": "Nautica",
+      "price": 100,
+      "brand": "Nautica",
+      "Description": "Nautica Men's Quarter-Zip Sweater",
+      "CategorieId": 2,
+      "color": "red",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 20,
+      "inSale": true,
+      "priceInSale": 50,
+      "images": [
+        "assets/images/Nautica1",
+        "assets/images/Nautica2",
+        "assets/images/Nautica3"
+      ]
+    },
+    {
+      "id": 12,
+      "Name": "Yeokou",
+      "price": 200,
+      "brand": "Yeokou",
+      "Description": "Yeokou Men's Shawl Collar Cardigans Slim Fit Button Cable Knit Black Sweater Pockets",
+      "CategorieId": 2,
+      "color": "red",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 20,
+      "inSale": false,
+      "images": [
+        "assets/images/Yeokou1",
+        "assets/images/Yeokou2",
+        "assets/images/Yeokou3"
+      ]
+    },
+    {
+      "id": 13,
+      "Name": "RAGEMALL",
+      "price": 300,
+      "brand": "RAGEMALL",
+      "Description": "RAGEMALL Mens Long Cardigan Open Front Draped Lightweight Hooded Sweater with Pockets",
+      "CategorieId": 2,
+      "color": "yellow",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 20,
+      "inSale": false,
+      "images": [
+        "assets/images/RAGEMALL1",
+        "assets/images/RAGEMALL2",
+        "assets/images/RAGEMALL3"
+      ]
+    },
+    {
+      "id": 14,
+      "Name": "V Neck",
+      "price": 100,
+      "brand": "Comfortably Collared",
+      "Description": "Perfect Slim Fit V Neck Sweaters for Men | Lightweight Breathable Mens Sweater | Soft Fitted V-Neck Pullover for Men",
+      "CategorieId": 2,
+      "color": "red",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 20,
+      "inSale": false,
+      "images": [
+        "assets/images/V Neck1",
+        "assets/images/V Neck2",
+        "assets/images/V Neck3"
+      ]
+    },
+    {
+      "id": 15,
+      "Name": "Tommy",
+      "price": 250,
+      "brand": "Tommy Bahama",
+      "Description": "Tommy Bahama Flipshore 1/2 Zip",
+      "CategorieId": 2,
+      "color": "white",
+      "numberOfAvailableItems": 0,
+      "numberOfSoldItems": 20,
+      "inSale": true,
+      "priceInSale": 150,
+      "images": [
+        "assets/images/Tommy1",
+        "assets/images/Tommy2",
+        "assets/images/Tommy3"
+      ]
+    },
+    {
+      "id": 16,
+      "Name": "Pioneer",
+      "price": 100,
+      "brand": "Pioneer Camp",
+      "Description": "Pioneer Camp Men's Cardigan Sweaters Full Zip Up Stand Collar Slim Fit Casual Knitted Sweater with 2 Front Pockets",
+      "CategorieId": 2,
+      "color": "black",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 20,
+      "inSale": false,
+      "images": [
+        "assets/images/Pioneer1",
+        "assets/images/Pioneer2",
+        "assets/images/Pioneer3"
+      ]
+    },
+    {
+      "id": 17,
+      "Name": "Robert",
+      "price": 500,
+      "brand": "Robert Graham",
+      "Description": "Robert Graham Hervey, Long-Sleeve Quarter-Zip Sweater for Men",
+      "CategorieId": 2,
+      "color": "gray",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 20,
+      "inSale": true,
+      "priceInSale": 150,
+      "images": [
+        "assets/images/Robert1",
+        "assets/images/Robert2",
+        "assets/images/Robert3"
+      ]
+    },
+    {
+      "id": 18,
+      "Name": "Hip Hop",
+      "price": 400,
+      "brand": "Hip Hop 50s",
+      "Description": "Hip Hop 50's Shop - Mens 1950s Letterman Cardigan Sweater",
+      "CategorieId": 2,
+      "color": "brown",
+      "numberOfAvailableItems": 0,
+      "numberOfSoldItems": 20,
+      "inSale": false,
+      "images": [
+        "assets/images/Hip Hop1",
+        "assets/images/Hip Hop2",
+        "assets/images/Hip Hop3"
+      ]
+    },
+    {
+      "id": 19,
+      "Name": "Esobo",
+      "price": 150,
+      "brand": "Esobo",
+      "Description": "Esobo Men's Shawl Collar Cardigan Sweater Multi-Color Button Down Knitted Sweaters with Pockets",
+      "CategorieId": 2,
+      "color": "green",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 20,
+      "inSale": true,
+      "priceInSale": 150,
+      "images": [
+        "assets/images/Esobo1",
+        "assets/images/Esobo2",
+        "assets/images/Esobo3"
+      ]
+    },
+    {
+      "id": 20,
+      "Name": "Kallspin",
+      "price": 100,
+      "brand": "Kallspin",
+      "Description": "Kallspin Men's Cashmere Wool Blend Relax Fit Vest Knit V-Neck Sweater",
+      "CategorieId": 2,
+      "color": "red",
+      "numberOfAvailableItems": 0,
+      "numberOfSoldItems": 20,
+      "inSale": true,
+      "priceInSale": 150,
+      "images": [
+        "assets/images/Kallspin1",
+        "assets/images/Kallspin2",
+        "assets/images/Kallspin3"
+      ]
+    },
+    {
+      "ID": 21,
+      "Name": "Dressing Table",
+      "CategorieId": 3,
+      "color": "white",
+      "numberOfAvailableItems": 5,
+      "numberOfSoldItems": 3,
+      "inSale": false,
+      "priceInSale": 0,
+      "price": "40$",
+      "brand": "Infiniwe",
+      "images": [
+        "assets/images/dressingtable_1.jpg",
+        "assets/images/dressingtable_2.jpg",
+        "assets/images/dressingtable_3.jpg"
+      ],
+      "Description": "infiniwe Dressing Table Makeup Vanity Desk Small Apartment Furniture-Home Office Console Simple Writing Desk Learning Computer Desk for Narrow Small"
+    },
+    {
+      "ID": 22,
+      "Name": "sofa",
+      "CategorieId": 3,
+      "color": "blue",
+      "numberOfAvailableItems": 10,
+      "numberOfSoldItems": 4,
+      "inSale": true,
+      "priceInSale": "50$",
+      "price": "60$",
+      "brand": "Amazon",
+      "images": [
+        "assets/images/sofa_1.jpg",
+        "assets/images/sofa_2.jpg",
+        "assets/images/sofa_3.jpg"
+      ],
+      "Description": "Rivet Frederick Mid-Century Channel Tufted Velvet Sofa Couch, 77.5'W, Navy Blue"
+    },
+    {
+      "ID": 23,
+      "Name": "Bed",
+      "CategorieId": 3,
+      "color": "black",
+      "numberOfAvailableItems": 5,
+      "numberOfSoldItems": 9,
+      "inSale": true,
+      "priceInSale": "100$",
+      "price": "150$",
+      "brand": "Zinus",
+      "images": [
+        "assets/images/bed_1.jpg",
+        "assets/images/bed_2.jpg",
+        "assets/images/bed_3.jpg"
+      ],
+      "Description": "ZINUS Mia Metal Platform Bed Frame with Headboard / Wood Slat Support / No Box Spring Needed / Easy Assembly, King"
+    },
+    {
+      "ID": 24,
+      "Name": "Office chair",
+      "CategorieId": 3,
+      "color": "dark red",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 12,
+      "inSale": true,
+      "priceInSale": "100$",
+      "price": "120$",
+      "brand": "Ergonomic",
+      "images": [
+        "assets/images/officechair_1.jpg",
+        "assets/images/officechair_2.jpg",
+        "assets/images/officechair_3.jpg"
+      ],
+      "Description": " Featuring reliable ergonomic support, Articulate comes with a breathable mesh back, passive lumbar support, and generously padded and contoured 6” thick mesh seat cushion"
+    },
+    {
+      "ID": 25,
+      "Name": "Office desk",
+      "CategorieId": 3,
+      "color": "black",
+      "numberOfAvailableItems": 10,
+      "numberOfSoldItems": 5,
+      "inSale": false,
+      "priceInSale": 0,
+      "price": "120$",
+      "brand": "Joiscope",
+      "images": [
+        "assets/images/officedesk_1.jpg",
+        "assets/images/officedesk_2.jpg",
+        "assets/images/officedesk_3.jpg"
+      ],
+      "Description": "JOISCOPE Home Office Computer Desk,Small Study Writing Desk with Wooden Storage Shelf,2-Tier Industrial Morden Laptop Table with Splice Board,47 inches"
+    },
+    {
+      "ID": 26,
+      "Name": "Shoe organizer",
+      "CategorieId": 3,
+      "color": "black",
+      "numberOfAvailableItems": 15,
+      "numberOfSoldItems": 10,
+      "inSale": false,
+      "priceInSale": 0,
+      "price": "35$",
+      "brand": "Tribesigns",
+      "images": [
+        "assets/images/shoeorganizer_1.jpg",
+        "assets/images/shoeorganizer_2.jpg",
+        "assets/images/shoeorganizer_3.jpg"
+      ],
+      "Description": "Shoe Rack Shoe Shelf Shoe Storage Organizer with Side Hooks For Entryway, 24-30 Pairs Metal Shoe Rack Taller Shoes Boots Organizer"
+    },
+    {
+      "ID": 27,
+      "Name": "Night stands",
+      "CategorieId": 3,
+      "color": "black",
+      "numberOfAvailableItems": 10,
+      "numberOfSoldItems": 20,
+      "inSale": true,
+      "priceInSale": "130$",
+      "price": "149$",
+      "brand": "Nathan James",
+      "images": [
+        "assets/images/nightstand_1.jpg",
+        "assets/images/nightstand_2.jpg",
+        "assets/images/nightstand_3.jpg"
+      ],
+      "Description": "Nathan James Harper Mid-Century Side, 2-Drawer Nightstand, Accent or End Table with Storage, Wood, Black/Brown"
+    },
+    {
+      "ID": 28,
+      "Name": "Glass table",
+      "CategorieId": 3,
+      "color": "white",
+      "numberOfAvailableItems": 30,
+      "numberOfSoldItems": 10,
+      "inSale": true,
+      "priceInSale": "120$",
+      "price": "125$",
+      "brand": "HAYOSNFO",
+      "images": [
+        "assets/images/glasstable_1.jpg",
+        "assets/images/glasstable_2.jpg",
+        "assets/images/glasstable_3.jpg"
+      ],
+      "Description": "Round Glass Kitchen Dining Table Modern Leisure Table with Wood Legs for Kitchen Dining Room & Living Room 31.5'"
+    },
+    {
+      "ID": 29,
+      "Name": "Chair",
+      "CategorieId": 3,
+      "color": "yellow",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 30,
+      "inSale": true,
+      "priceInSale": "200$",
+      "price": "300$",
+      "brand": " Christopher Knight Home Store",
+      "images": [
+        "assets/images/chair_1.jpg",
+        "assets/images/chair_2.jpg",
+        "assets/images/chair_3.jpg"
+      ],
+      "Description": "Mason Mid-Century Modern Tuft Back Recliner (Qty of 1, Fabric/Muted Yellow)"
+    },
+    {
+      "ID": 30,
+      "Name": "TV table",
+      "CategorieId": 3,
+      "color": "biege",
+      "numberOfAvailableItems": 15,
+      "numberOfSoldItems": 10,
+      "inSale": false,
+      "priceInSale": 0,
+      "price": "180$",
+      "brand": " SIMPLIHOME",
+      "images": [
+        "assets/images/tvtable_1.jpg",
+        "assets/images/tvtable_2.jpg",
+        "assets/images/tvtable_3.jpg"
+      ],
+      "Description": "SIMPLIHOME Hunter SOLID WOOD Universal TV Media Stand, 60 inch Wide, Modern Industrial, Living Room Entertainment Center, with Storage, for Flat Screen TVs up to 70 inches in Natural"
+    },
+    {
+      "id": 31,
+      "Name": "Dell G15",
+      "price": 15150,
+      "brand": "Dell",
+      "color": "black",
+      "numberOfAvailableItems": 3,
+      "numberOfSoldItems": 2,
+      "inSale": false,
+      "priceInSale": 15150,
+      "images": [
+        "assets/images/4-1-1.jpg",
+        "assets/images/4-1-2.jpg",
+        "assets/images/4-1-3.jpg"
+      ],
+      "Description": "Dell G15 15-5510 Gaming laptop - 10th Intel Core i5-10200H, 8GB RAM, 512GB SSD, Nvidia Geforce GTX1650 4GB GDDR6 Graphics, 15.6"
+    },
+    {
+      "id": 32,
+      "Name": "HP Laptop 15-dw3014ne",
+      "price": 12999,
+      "brand": "HP",
+      "color": "silver",
+      "numberOfAvailableItems": 5,
+      "numberOfSoldItems": 4,
+      "inSale": true,
+      "priceInSale": 11999,
+      "images": [
+        "assets/images/4-2-1.jpg",
+        "assets/images/4-2-2.jpg",
+        "assets/images/4-2-3.jpg"
+      ],
+      "Description": "PCIe SSD storage, DDR4 RAM, NVIDIA® GeForce® MX350 graphics, Full HD display, Anti-glare panel, SuperSpeed USB Type-C® 5Gbps signaling data rate"
+    },
+    {
+      "id": 33,
+      "Name": "Lenovo V15-ADA",
+      "price": 5190,
+      "brand": "Lenovo",
+      "color": "black",
+      "numberOfAvailableItems": 8,
+      "numberOfSoldItems": 10,
+      "inSale": true,
+      "priceInSale": 4999,
+      "images": [
+        "assets/images/4-3-1.jpg",
+        "assets/images/4-3-2.jpg",
+        "assets/images/4-3-3.jpg"
+      ],
+      "Description": "Lenovo V15-ADA 82C7007YED Laptop - AMD 3020e, 4 GB RAM, 1TB HDD, Integrated AMD Radeon Graphics, 15.6"
+    },
+    {
+      "id": 34,
+      "Name": "HP Pavilion x360",
+      "price": 15999,
+      "brand": "HP",
+      "color": "silver",
+      "numberOfAvailableItems": 6,
+      "numberOfSoldItems": 2,
+      "inSale": false,
+      "priceInSale": 15999,
+      "images": ["assets/images/4-4-1.jpg", "assets/images/4-4-2.jpg"],
+      "Description": "HP Pavilion x360 Convertible 2n1 14m-dw1023dx laptop - 11th Intel Core i5-1135G7, 8G RAM , 256GB SSD, Intel Iris Xe Graphics, 14"
+    },
+    {
+      "id": 35,
+      "Name": "Dell Vostro 3510",
+      "price": 20700,
+      "brand": "Dell",
+      "color": "black",
+      "numberOfAvailableItems": 7,
+      "numberOfSoldItems": 3,
+      "inSale": true,
+      "priceInSale": 19999,
+      "images": [
+        "assets/images/4-5-1.jpg",
+        "assets/images/4-5-2.jpg",
+        "assets/images/4-5-3.jpg"
+      ],
+      "Description": "Dell Vostro 3510 laptop - 11th Gen Intel core i7-1165G7, 16GB RAM, 1TB HDD + 256GB SSD, Nvidia GeForce MX350 GDDR5 Graphics, 15.6"
+    },
+    {
+      "id": 36,
+      "Name": "Laptop ASUS X509FA-BR949T",
+      "price": 7999,
+      "brand": "ASUS",
+      "color": "silver",
+      "numberOfAvailableItems": 2,
+      "numberOfSoldItems": 2,
+      "inSale": false,
+      "priceInSale": 7999,
+      "images": [
+        "assets/images/4-6-1.jpg",
+        "assets/images/4-6-2.jpg",
+        "assets/images/4-6-3.jpg"
+      ],
+      "Description": "Laptop ASUS X509FA-BR949T(Intel® Core™ i3-10110U -RAM 4GB-HARD 256GB M.2 NVMe SSD- VGA Intel"
+    },
+    {
+      "id": 37,
+      "Name": "Dell Vostro 3500 laptop",
+      "price": 13477,
+      "brand": "Dell",
+      "color": "black",
+      "numberOfAvailableItems": 1,
+      "numberOfSoldItems": 2,
+      "inSale": false,
+      "priceInSale": 13477,
+      "images": [
+        "assets/images/4-7-1.jpg",
+        "assets/images/4-7-2.jpg",
+        "assets/images/4-7-3.jpg"
+      ],
+      "Description": "Dell Vostro 3500 laptop - 11th vvGen Intel core i5-1135G7, 8GB RAM, 1TB HDD, 256G SSD-Nvidia GeForc"
+    },
+    {
+      "id": 38,
+      "Name": "Hp 15-ef2126wm",
+      "price": 10999,
+      "brand": "HP",
+      "color": "silver",
+      "numberOfAvailableItems": 5,
+      "numberOfSoldItems": 1,
+      "inSale": true,
+      "priceInSale": 9999,
+      "images": [
+        "assets/images/4-8-1.jpg",
+        "assets/images/4-8-2.jpg",
+        "assets/images/4-8-3.jpg"
+      ],
+      "Description": "11th GHp 15-ef2126wm Laptop - Ryzen 5 5500U 6 Cores, 8GB RAM, 256GB SSD, AMD Radeon Graphics, 15.6"
+    },
+    {
+      "id": 39,
+      "Name": "Lenovo V15 IML Laptop",
+      "price": 10255,
+      "brand": "Lenovo",
+      "color": "gray",
+      "numberOfAvailableItems": 4,
+      "numberOfSoldItems": 2,
+      "inSale": true,
+      "priceInSale": 9999,
+      "images": ["assets/images/4-9-1.jpg"],
+      "Description": "Lenovo V15 IML Laptop - Intel Core i5-10210U, 8GB RAM, 1TB HDD, Intel UHD Graphics, 15.6"
+    },
+    {
+      "id": 40,
+      "Name": "Lenovo IdeaPad 5 Laptop",
+      "price": 12490,
+      "brand": "Lenovo",
+      "color": "silver",
+      "numberOfAvailableItems": 9,
+      "numberOfSoldItems": 7,
+      "inSale": false,
+      "priceInSale": 12490,
+      "images": [
+        "assets/images/4-10-1.jpg",
+        "assets/images/4-10-2.jpg",
+        "assets/images/4-10-3.jpg"
+      ],
+      "Description": "Lenovo IdeaPad 5 Laptop - 11th Intel Core i5-1135G7, 8GB RAM , 1TB HDD + 256GB SSD, Intel Iris Xe Graphics"
+    }
+  ]
 }
