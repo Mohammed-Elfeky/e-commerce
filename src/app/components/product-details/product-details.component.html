@@ -1,1 +1,28 @@
 <p>product-details works!</p>
+
+
+<div style="width: 500px;" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+
+      <li *ngFor="let img of images;let i=index" 
+          data-target="#carouselExampleIndicators" 
+          attr.data-slide-to="{{i}}" 
+          [ngClass]="{'active': i==0}"
+          >
+
+        <img [src]="img"  class="d-block w-100" alt="">
+      </li>
+
+    </ol>
+
+
+    <div class="carousel-inner">
+      <div *ngFor="let img of images;let k=index" 
+            [ngClass]="{'active': k==0}"
+            class="carousel-item"
+      >
+        <img [src]="img" class="d-block w-100" alt="">
+      </div>
+    </div>
+    
+  </div>
