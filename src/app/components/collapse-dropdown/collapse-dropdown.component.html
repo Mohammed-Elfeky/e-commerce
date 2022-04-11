@@ -1,0 +1,19 @@
+<div class="collaps">
+    <div (click)="whenClickUp()" class="collaps__up">
+        {{title}}
+        <i *ngIf="isOpen" class="fa-solid fa-angle-up"></i>
+        <i *ngIf="!isOpen" class="fa-solid fa-angle-down"></i>
+    </div>
+
+    <!-- if color show this -->
+    <div [ngStyle]="{'height': isOpen ? '300px' : '0' }" *ngIf="title=='Color';else price" class="collaps__down-color">
+            <div *ngFor="let color of colors" [ngStyle]="{ 'background-color':color }" class="color_item"></div>
+    </div>
+
+    <!-- if price show this -->
+    <ng-template #price>
+            <div class="collaps__down-price" [ngStyle]="{'height': isOpen ? '70px' : '0' }">
+                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+            </div>
+    </ng-template>
+</div>

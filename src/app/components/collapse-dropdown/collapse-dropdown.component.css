@@ -1,0 +1,39 @@
+.collaps{
+    width: 260px;
+    padding: 20px 0;
+}
+.collaps__up{
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(47, 45, 59);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.collaps__down-color,
+.collaps__down-price
+{
+    transition:all .5s  ease-in-out;
+    overflow: hidden;
+}
+.collaps__down-color{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: flex-start;
+}
+.color_item{
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    cursor: pointer;
+}
+.collabs_item{
+    margin: 15px 0;
+}
+
+.form-range{
+    color: brown;
+    width: 80%;
+}

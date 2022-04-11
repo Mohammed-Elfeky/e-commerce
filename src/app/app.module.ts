@@ -15,6 +15,7 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { RouterModule, Routes } from '@angular/router';
+import { CollapseDropdownComponent } from './components/collapse-dropdown/collapse-dropdown.component';
 let routes:Routes=[
   {path:'',redirectTo:'category',pathMatch:'full'},
   {path:"category",component:CategoriesComponent},
@@ -32,7 +33,8 @@ let routes:Routes=[
     AsideComponent,
     ProductsComponent,
     ProductCardComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CollapseDropdownComponent
   ],
   imports: [
     BrowserModule,
