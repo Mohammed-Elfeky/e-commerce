@@ -11,7 +11,7 @@ interface product{
   "numberOfAvailableItems": number,
   "numberOfSoldItems": number,
   "inSale": boolean,
-  "priceInSale": number,
+  "priceBeforeSale": number,
   "images": string[],
   "Name": string,
   "price": number,
