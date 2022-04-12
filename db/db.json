@@ -22,7 +22,7 @@
     }
   ],
   "Products": [
-    {
+   {
       "id": 1,
       "CategorieId": 1,
       "color": "gray",
@@ -47,7 +47,7 @@
       "numberOfAvailableItems": 15,
       "numberOfSoldItems": 10,
       "inSale": true,
-      "priceInSale": 30.0,
+      "priceBeforeSale": 40.0,
       "images": [
         "assets/images/fileOrganizer_1.jpg",
         "assets/images/fileOrganizer_2.jpg",
@@ -65,7 +65,7 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 5,
       "inSale": true,
-      "priceInSale": 19.99,
+      "priceBeforeSale": 30.99,
       "images": [
         "assets/images/paperTrim_1.jpg",
         "assets/images/paperTrim_2.jpg",
@@ -83,7 +83,7 @@
       "numberOfAvailableItems": 12,
       "numberOfSoldItems": 6,
       "inSale": false,
-      "priceInSale": 0,
+      "priceBeforeSale": 10,
       "images": [
         "assets/images/stapler_1.jpg",
         "assets/images/stapler_2.jpg",
@@ -101,7 +101,7 @@
       "numberOfAvailableItems": 16,
       "numberOfSoldItems": 8,
       "inSale": true,
-      "priceInSale": 80.0,
+      "priceBeforeSale": 90.0,
       "images": [
         "assets/images/projector_1.jpg",
         "assets/images/projector_2.jpg",
@@ -119,7 +119,7 @@
       "numberOfAvailableItems": 6,
       "numberOfSoldItems": 4,
       "inSale": false,
-      "priceInSale": 0,
+      "priceBeforeSale": 25,
       "images": [
         "assets/images/thermal_1.jpg",
         "assets/images/thermal_2.jpg",
@@ -137,7 +137,7 @@
       "numberOfAvailableItems": 14,
       "numberOfSoldItems": 7,
       "inSale": true,
-      "priceInSale": 10.0,
+      "priceBeforeSale": 15.0,
       "images": [
         "assets/images/calculator_1.jpg",
         "assets/images/calculator_2.jpg",
@@ -155,7 +155,7 @@
       "numberOfAvailableItems": 10,
       "numberOfSoldItems": 7,
       "inSale": false,
-      "priceInSale": 0,
+      "priceBeforeSale": 150,
       "images": [
         "assets/images/printer_1.jpg",
         "assets/images/printer_2.jpg",
@@ -173,7 +173,7 @@
       "numberOfAvailableItems": 8,
       "numberOfSoldItems": 8,
       "inSale": true,
-      "priceInSale": 20.0,
+      "priceBeforeSale": 30.0,
       "images": [
         "assets/images/riser_1.jpg",
         "assets/images/riser_2.jpg",
@@ -191,7 +191,7 @@
       "numberOfAvailableItems": 5,
       "numberOfSoldItems": 2,
       "inSale": false,
-      "priceInSale": 0,
+      "priceBeforeSale": 55,
       "images": [
         "assets/images/comfortSeat_1.jpg",
         "assets/images/comfortSeat_2.jpg",
@@ -213,7 +213,7 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 20,
       "inSale": true,
-      "priceInSale": 50,
+      "priceBeforeSale": 150,
       "images": [
         "assets/images/Nautica1.jpg",
         "assets/images/Nautica2.jpg",
@@ -231,6 +231,7 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 20,
       "inSale": false,
+      "priceBeforeSale": 250,
       "images": [
         "assets/images/Yeokou1.jpg",
         "assets/images/Yeokou2.jpg",
@@ -248,10 +249,11 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 20,
       "inSale": false,
+      "priceBeforeSale": 350,
       "images": [
         "assets/images/RAGEMALL1.jpg",
-        "assets/images/RAGEMALL2.jpg",
-        "assets/images/RAGEMALL3.jpg"
+        "assets/images/RAGEMALL3.jpg",
+        "assets/images/RAGEMALL2.jpg"
       ]
     },
     {
@@ -265,6 +267,7 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 20,
       "inSale": false,
+      "priceBeforeSale": 150,
       "images": [
         "assets/images/V Neck1.jpg",
         "assets/images/V Neck2.jpg",
@@ -282,7 +285,7 @@
       "numberOfAvailableItems": 0,
       "numberOfSoldItems": 20,
       "inSale": true,
-      "priceInSale": 150,
+      "priceBeforeSale": 350,
       "images": [
         "assets/images/Tommy1.jpg",
         "assets/images/Tommy2.jpg",
@@ -300,6 +303,7 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 20,
       "inSale": false,
+      "priceBeforeSale": 150,
       "images": [
         "assets/images/Pioneer1.jpg",
         "assets/images/Pioneer2.jpg",
@@ -317,7 +321,7 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 20,
       "inSale": true,
-      "priceInSale": 150,
+      "priceBeforeSale": 550,
       "images": [
         "assets/images/Robert1.jpg",
         "assets/images/Robert2.jpg",
@@ -335,6 +339,7 @@
       "numberOfAvailableItems": 0,
       "numberOfSoldItems": 20,
       "inSale": false,
+      "priceBeforeSale": 550,
       "images": [
         "assets/images/Hip Hop1.jpg",
         "assets/images/Hip Hop2.jpg",
@@ -352,7 +357,7 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 20,
       "inSale": true,
-      "priceInSale": 150,
+      "priceBeforeSale": 250,
       "images": [
         "assets/images/Esobo1.jpg",
         "assets/images/Esobo2.jpg",
@@ -370,7 +375,7 @@
       "numberOfAvailableItems": 0,
       "numberOfSoldItems": 20,
       "inSale": true,
-      "priceInSale": 150,
+      "priceBeforeSale": 150,
       "images": [
         "assets/images/Kallspin1.jpg",
         "assets/images/Kallspin2.jpg",
@@ -385,8 +390,8 @@
       "numberOfAvailableItems": 5,
       "numberOfSoldItems": 3,
       "inSale": false,
-      "priceInSale": 0,
-      "price": "40$",
+      "priceBeforeSale":80,
+      "price": 40,
       "brand": "Infiniwe",
       "images": [
         "assets/images/dressingtable_1.jpg",
@@ -403,8 +408,8 @@
       "numberOfAvailableItems": 10,
       "numberOfSoldItems": 4,
       "inSale": true,
-      "priceInSale": "50$",
-      "price": "60$",
+      "priceBeforeSale": 80,
+      "price": 60,
       "brand": "Amazon",
       "images": [
         "assets/images/sofa_1.jpg",
@@ -421,8 +426,8 @@
       "numberOfAvailableItems": 5,
       "numberOfSoldItems": 9,
       "inSale": true,
-      "priceInSale": "100$",
-      "price": "150$",
+      "priceBeforeSale": 200,
+      "price": 150,
       "brand": "Zinus",
       "images": [
         "assets/images/bed_1.jpg",
@@ -439,8 +444,8 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 12,
       "inSale": true,
-      "priceInSale": "100$",
-      "price": "120$",
+      "priceBeforeSale": 200,
+      "price": 120,
       "brand": "Ergonomic",
       "images": [
         "assets/images/officechair_1.jpg",
@@ -457,8 +462,8 @@
       "numberOfAvailableItems": 10,
       "numberOfSoldItems": 5,
       "inSale": false,
-      "priceInSale": 0,
-      "price": "120$",
+      "priceBeforeSale": 200,
+      "price": 120,
       "brand": "Joiscope",
       "images": [
         "assets/images/officedesk_1.jpg",
@@ -475,8 +480,8 @@
       "numberOfAvailableItems": 15,
       "numberOfSoldItems": 10,
       "inSale": false,
-      "priceInSale": 0,
-      "price": "35$",
+      "priceBeforeSale": 50,
+      "price": 35,
       "brand": "Tribesigns",
       "images": [
         "assets/images/shoeorganizer_1.jpg",
@@ -493,8 +498,8 @@
       "numberOfAvailableItems": 10,
       "numberOfSoldItems": 20,
       "inSale": true,
-      "priceInSale": "130$",
-      "price": "149$",
+      "priceBeforeSale": 200,
+      "price": 149,
       "brand": "Nathan James",
       "images": [
         "assets/images/nightstand_1.jpg",
@@ -511,8 +516,8 @@
       "numberOfAvailableItems": 30,
       "numberOfSoldItems": 10,
       "inSale": true,
-      "priceInSale": "120$",
-      "price": "125$",
+      "priceBeforeSale": 200,
+      "price": 125,
       "brand": "HAYOSNFO",
       "images": [
         "assets/images/glasstable_1.jpg",
@@ -529,8 +534,8 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 30,
       "inSale": true,
-      "priceInSale": "200$",
-      "price": "300$",
+      "priceBeforeSale": 400,
+      "price": 300,
       "brand": " Christopher Knight Home Store",
       "images": [
         "assets/images/chair_1.jpg",
@@ -547,8 +552,8 @@
       "numberOfAvailableItems": 15,
       "numberOfSoldItems": 10,
       "inSale": false,
-      "priceInSale": 0,
-      "price": "180$",
+      "priceBeforeSale": 200,
+      "price": 180,
       "brand": " SIMPLIHOME",
       "images": [
         "assets/images/tvtable_1.jpg",
@@ -567,7 +572,7 @@
       "numberOfAvailableItems": 3,
       "numberOfSoldItems": 2,
       "inSale": false,
-      "priceInSale": 15150,
+      "priceBeforeSale": 17000,
       "images": [
         "assets/images/4-1-1.jpg",
         "assets/images/4-1-2.jpg",
@@ -585,7 +590,7 @@
       "numberOfAvailableItems": 5,
       "numberOfSoldItems": 4,
       "inSale": true,
-      "priceInSale": 11999,
+      "priceBeforeSale": 14000,
       "images": [
         "assets/images/4-2-1.jpg",
         "assets/images/4-2-2.jpg",
@@ -603,7 +608,7 @@
       "numberOfAvailableItems": 8,
       "numberOfSoldItems": 10,
       "inSale": true,
-      "priceInSale": 4999,
+      "priceBeforeSale": 6000,
       "images": [
         "assets/images/4-3-1.jpg",
         "assets/images/4-3-2.jpg",
@@ -621,8 +626,12 @@
       "numberOfAvailableItems": 6,
       "numberOfSoldItems": 2,
       "inSale": false,
-      "priceInSale": 15999,
-      "images": ["assets/images/4-4-1.jpg", "assets/images/4-4-2.jpg"],
+      "priceBeforeSale": 17000,
+      "images": [
+        "assets/images/4-4-1.jpg",
+        "assets/images/4-4-2.jpg",
+        "assets/images/4-4-3.jpg"
+      ],
       "Description": "HP Pavilion x360 Convertible 2n1 14m-dw1023dx laptop - 11th Intel Core i5-1135G7, 8G RAM , 256GB SSD, Intel Iris Xe Graphics, 14"
     },
     {
@@ -635,7 +644,7 @@
       "numberOfAvailableItems": 7,
       "numberOfSoldItems": 3,
       "inSale": true,
-      "priceInSale": 19999,
+      "priceBeforeSale": 21000,
       "images": [
         "assets/images/4-5-1.jpg",
         "assets/images/4-5-2.jpg",
@@ -646,14 +655,14 @@
     {
       "id": 36,
       "Name": "Laptop ASUS X509FA-BR949T",
-      "price": 7999,
+      "price": 7000,
       "CategorieId": 4,
       "brand": "ASUS",
       "color": "silver",
       "numberOfAvailableItems": 2,
       "numberOfSoldItems": 2,
       "inSale": false,
-      "priceInSale": 7999,
+      "priceBeforeSale": 7999,
       "images": [
         "assets/images/4-6-1.jpg",
         "assets/images/4-6-2.jpg",
@@ -664,14 +673,14 @@
     {
       "id": 37,
       "Name": "Dell Vostro 3500 laptop",
-      "price": 13477,
+      "price": 1300,
       "CategorieId": 4,
       "brand": "Dell",
       "color": "black",
       "numberOfAvailableItems": 1,
       "numberOfSoldItems": 2,
       "inSale": false,
-      "priceInSale": 13477,
+      "priceBeforeSale": 13477,
       "images": [
         "assets/images/4-7-1.jpg",
         "assets/images/4-7-2.jpg",
@@ -682,14 +691,14 @@
     {
       "id": 38,
       "Name": "Hp 15-ef2126wm",
-      "price": 10999,
+      "price": 800,
       "CategorieId": 4,
       "brand": "HP",
       "color": "silver",
       "numberOfAvailableItems": 5,
       "numberOfSoldItems": 1,
       "inSale": true,
-      "priceInSale": 9999,
+      "priceBeforeSale": 9999,
       "images": [
         "assets/images/4-8-1.jpg",
         "assets/images/4-8-2.jpg",
@@ -700,15 +709,19 @@
     {
       "id": 39,
       "Name": "Lenovo V15 IML Laptop",
-      "price": 10255,
+      "price": 800,
       "CategorieId": 4,
       "brand": "Lenovo",
       "color": "gray",
       "numberOfAvailableItems": 4,
       "numberOfSoldItems": 2,
       "inSale": true,
-      "priceInSale": 9999,
-      "images": ["assets/images/4-9-1.jpg"],
+      "priceBeforeSale": 9999,
+      "images": [
+        "assets/images/4-9-1.jpg",
+        "assets/images/4-9-2.jpg",
+        "assets/images/4-9-3.jpg"
+      ],
       "Description": "Lenovo V15 IML Laptop - Intel Core i5-10210U, 8GB RAM, 1TB HDD, Intel UHD Graphics, 15.6"
     },
     {

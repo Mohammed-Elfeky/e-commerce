@@ -1,7 +1,18 @@
-<p>products works!</p>
-
-
-
-{{testPRODUCTS}}
-<app-aside [testASIDE]="testPRODUCTS"></app-aside>
-<app-product-card></app-product-card>
+<div class="container">
+  <div class="row">
+    <div class="col-3">
+      <app-aside [testASIDE]="testPRODUCTS"></app-aside>
+    </div>
+    <div class="col-9 d-flex flex-wrap flex-row justify-content-evenly">
+      <div
+        *ngFor="let product of products"
+        class="col-lg-4 col-sm-6 col-12 d-flex justify-content-around"
+      >
+        <app-product-card
+          [product]="product"
+          class="d-flex flex-wrap align-items-stretch"
+        ></app-product-card>
+      </div>
+    </div>
+  </div>
+</div>

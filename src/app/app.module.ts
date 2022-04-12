@@ -15,13 +15,12 @@ import { ProductsComponent } from './components/products/products.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { RouterModule, Routes } from '@angular/router';
+
 import { CollapseDropdownComponent } from './components/collapse-dropdown/collapse-dropdown.component';
-let routes:Routes=[
-  {path:'',redirectTo:'category',pathMatch:'full'},
-  {path:"category",component:CategoriesComponent},
-  {path:"category/:id",component:ProductsComponent},
-  {path:"product/:id",component:ProductDetailsComponent},
-]
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -42,8 +41,7 @@ let routes:Routes=[
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    AppRoutingModule,
-    RouterModule.forRoot(routes),
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
