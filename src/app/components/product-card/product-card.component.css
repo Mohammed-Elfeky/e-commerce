@@ -1,0 +1,84 @@
+.card {
+  border: none;
+  border-radius: 0;
+  /*border: 1px solid rgba(0, 0, 0, .125);*/
+  /*border-radius: .25rem*/
+}
+.card-title {
+  margin-bottom: 0;
+}
+
+.outStack {
+  background-color: rgba(128, 128, 128, 0.685);
+  color: white;
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  text-align: center;
+  padding: 0.5em;
+}
+
+.onsale {
+  background-color: #eb415de8;
+  color: antiquewhite;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3em;
+  height: 3em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(29, 28, 28);
+}
+
+.saleD {
+  text-decoration: line-through;
+  color: #eb415d;
+}
+
+.noSaleD {
+  text-decoration: none;
+  text-align: center;
+}
+
+.expand_button {
+  position: absolute;
+  left: 50%;
+  bottom: 31%;
+  transform: translate(-50%, -50%);
+}
+
+.e-button {
+  color: black;
+  font-weight: 5px;
+  background-color: rgb(218, 218, 218);
+  border: 1px solid rgb(218, 218, 218);
+  padding-left: 7px;
+  padding-right: 10px;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  max-width: 30px;
+  -webkit-transition: max-width 0.3s ease-in-out;
+  -moz-transition: max-width 0.3s ease-in-out;
+  -o-transition: max-width 0.3s ease-in-out;
+  transition: max-width 0.3s linear;
+}
+
+.e-button-text {
+  display: block;
+  white-space: nowrap;
+  color: rgb(83, 83, 83);
+}
+
+.e-button:hover {
+  background-color: rgb(218, 218, 218);
+  color: #fff;
+  max-width: 280px;
+}
