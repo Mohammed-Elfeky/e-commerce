@@ -250,8 +250,8 @@
       "inSale": false,
       "images": [
         "assets/images/RAGEMALL1.jpg",
-        "assets/images/RAGEMALL2.jpg",
-        "assets/images/RAGEMALL3.jpg"
+        "assets/images/RAGEMALL3.jpg",
+        "assets/images/RAGEMALL2.jpg"
       ]
     },
     {
@@ -386,7 +386,7 @@
       "numberOfSoldItems": 3,
       "inSale": false,
       "priceInSale": 0,
-      "price": "40$",
+      "price": 40,
       "brand": "Infiniwe",
       "images": [
         "assets/images/dressingtable_1.jpg",
@@ -403,8 +403,8 @@
       "numberOfAvailableItems": 10,
       "numberOfSoldItems": 4,
       "inSale": true,
-      "priceInSale": "50$",
-      "price": "60$",
+      "priceInSale": 50,
+      "price": 60,
       "brand": "Amazon",
       "images": [
         "assets/images/sofa_1.jpg",
@@ -421,8 +421,8 @@
       "numberOfAvailableItems": 5,
       "numberOfSoldItems": 9,
       "inSale": true,
-      "priceInSale": "100$",
-      "price": "150$",
+      "priceInSale": 100,
+      "price": 150,
       "brand": "Zinus",
       "images": [
         "assets/images/bed_1.jpg",
@@ -439,8 +439,8 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 12,
       "inSale": true,
-      "priceInSale": "100$",
-      "price": "120$",
+      "priceInSale": 100,
+      "price": 120,
       "brand": "Ergonomic",
       "images": [
         "assets/images/officechair_1.jpg",
@@ -458,7 +458,7 @@
       "numberOfSoldItems": 5,
       "inSale": false,
       "priceInSale": 0,
-      "price": "120$",
+      "price": 120,
       "brand": "Joiscope",
       "images": [
         "assets/images/officedesk_1.jpg",
@@ -476,7 +476,7 @@
       "numberOfSoldItems": 10,
       "inSale": false,
       "priceInSale": 0,
-      "price": "35$",
+      "price": 35,
       "brand": "Tribesigns",
       "images": [
         "assets/images/shoeorganizer_1.jpg",
@@ -493,8 +493,8 @@
       "numberOfAvailableItems": 10,
       "numberOfSoldItems": 20,
       "inSale": true,
-      "priceInSale": "130$",
-      "price": "149$",
+      "priceInSale": 130,
+      "price": 149,
       "brand": "Nathan James",
       "images": [
         "assets/images/nightstand_1.jpg",
@@ -511,8 +511,8 @@
       "numberOfAvailableItems": 30,
       "numberOfSoldItems": 10,
       "inSale": true,
-      "priceInSale": "120$",
-      "price": "125$",
+      "priceInSale": 120,
+      "price": 125,
       "brand": "HAYOSNFO",
       "images": [
         "assets/images/glasstable_1.jpg",
@@ -529,8 +529,8 @@
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 30,
       "inSale": true,
-      "priceInSale": "200$",
-      "price": "300$",
+      "priceInSale": 200,
+      "price": 300,
       "brand": " Christopher Knight Home Store",
       "images": [
         "assets/images/chair_1.jpg",
@@ -548,7 +548,7 @@
       "numberOfSoldItems": 10,
       "inSale": false,
       "priceInSale": 0,
-      "price": "180$",
+      "price": 180,
       "brand": " SIMPLIHOME",
       "images": [
         "assets/images/tvtable_1.jpg",
@@ -622,7 +622,11 @@
       "numberOfSoldItems": 2,
       "inSale": false,
       "priceInSale": 15999,
-      "images": ["assets/images/4-4-1.jpg", "assets/images/4-4-2.jpg"],
+      "images": [
+        "assets/images/4-4-1.jpg",
+        "assets/images/4-4-2.jpg",
+        "assets/images/4-4-3.jpg"
+      ],
       "Description": "HP Pavilion x360 Convertible 2n1 14m-dw1023dx laptop - 11th Intel Core i5-1135G7, 8G RAM , 256GB SSD, Intel Iris Xe Graphics, 14"
     },
     {
@@ -708,7 +712,11 @@
       "numberOfSoldItems": 2,
       "inSale": true,
       "priceInSale": 9999,
-      "images": ["assets/images/4-9-1.jpg"],
+      "images": [
+        "assets/images/4-9-1.jpg",
+        "assets/images/4-9-2.jpg",
+        "assets/images/4-9-3.jpg"
+      ],
       "Description": "Lenovo V15 IML Laptop - Intel Core i5-10210U, 8GB RAM, 1TB HDD, Intel UHD Graphics, 15.6"
     },
     {
