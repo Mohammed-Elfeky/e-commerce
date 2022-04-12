@@ -52,6 +52,7 @@ export class JsonDatabaseService {
     return this.myHttp.get<product[]>(`${this.BaseURL}/Products?CategorieId=${_CategorieId}&price_lte=${_price}`);
   }
   GetProductDetails(_productId:number){
+    console.log(`${this.BaseURL}/Products?id=${_productId}`);
     return this.myHttp.get<product>(`${this.BaseURL}/Products?id=${_productId}`);
   }
   AddNewProduct(_product:product){

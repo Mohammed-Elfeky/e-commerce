@@ -22,21 +22,21 @@
     }
   ],
   "Products": [
-   {
+    {
       "id": 1,
       "CategorieId": 1,
       "color": "gray",
       "numberOfAvailableItems": 10,
       "numberOfSoldItems": 5,
       "inSale": false,
-      "priceInSale": 0,
+      "priceBeforeSale": 10,
       "images": [
         "assets/images/RotaryPincle_1.jpg",
         "assets/images/RotaryPincle_2.jpg",
         "assets/images/RotaryPincle_3.jpg"
       ],
       "Name": "Rotary Pencil Sharpener",
-      "price": 9.9,
+      "price": 9,
       "brand": "Amazon Basics",
       "Description": "Color:Black, Material:ABS 79%- metal 13%- other 8%, Model Number:E0620,Power Source Type:Manual, Size:4.92' x 5.20' x 2.87'"
     },
@@ -390,7 +390,7 @@
       "numberOfAvailableItems": 5,
       "numberOfSoldItems": 3,
       "inSale": false,
-      "priceBeforeSale":80,
+      "priceBeforeSale": 80,
       "price": 40,
       "brand": "Infiniwe",
       "images": [
@@ -440,7 +440,7 @@
       "ID": 24,
       "Name": "Office chair",
       "CategorieId": 3,
-      "color": "dark red",
+      "color": "red",
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 12,
       "inSale": true,
@@ -548,7 +548,7 @@
       "ID": 30,
       "Name": "TV table",
       "CategorieId": 3,
-      "color": "biege",
+      "color": "burlywood",
       "numberOfAvailableItems": 15,
       "numberOfSoldItems": 10,
       "inSale": false,

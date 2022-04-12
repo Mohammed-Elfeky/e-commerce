@@ -1,4 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { JsonDatabaseService } from 'src/app/services/json-database.service';
 
 @Component({
   selector: 'app-collapse-dropdown',
@@ -7,21 +9,24 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CollapseDropdownComponent implements OnInit {
   @Input()
-  testPRICE:number=0;
+  categoryID:number=0;
   rangeVal:any=50;
   isOpen:boolean=false;
   @Input()
   title:string="";
   colors:any=[
-    "red",
+    "gray",
     "black",
-    "green",
+    "white",
+    "silver",
+    "red",
+    "yellow",
     "brown",
-    "red",
-    "black",
     "green",
+    "blue",
+    "burlywood"
   ];
-  constructor() { }
+  constructor(private myService:JsonDatabaseService,myRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
     console.log(this.isOpen)
@@ -29,10 +34,16 @@ export class CollapseDropdownComponent implements OnInit {
   whenClickUp(){
     this.isOpen=!this.isOpen
   }
+
+  @Output() priceEvent = new EventEmitter();
   whenMove(event:any){
     this.rangeVal=event.target.value;
+    this.priceEvent.emit(this.rangeVal);
   }
-  whenclick(){
-    this.testPRICE++
+
+  @Output() colorEvent = new EventEmitter();
+  getColor(color:string){
+    this.colorEvent.emit(color);
   }
+
 }

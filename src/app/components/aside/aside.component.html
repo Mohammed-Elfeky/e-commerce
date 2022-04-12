@@ -1,6 +1,9 @@
-
-
-
-<app-collapse-dropdown [title]="'Color'"></app-collapse-dropdown>
-<app-collapse-dropdown [testPRICE]="testASIDE" [title]="'Price'"></app-collapse-dropdown>
-
+<app-collapse-dropdown
+  [title]="'Color'"
+  (colorEvent)="getColorFromCollaps($event)"
+></app-collapse-dropdown>
+<app-collapse-dropdown
+  [categoryID]="categoryID"
+  (priceEvent)="getPriceFromCollaps($event)"
+  [title]="'Price'"
+></app-collapse-dropdown>
