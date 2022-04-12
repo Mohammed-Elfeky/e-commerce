@@ -8,8 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class ProductDetailsComponent implements OnInit {
 
   constructor() { }
-
+  images:any=[
+      "assets/images/V Neck1.jpg",
+      "assets/images/V Neck2.jpg",
+      "assets/images/V Neck3.jpg",
+      "assets/images/Tommy1.jpg",
+     
+  ]
   ngOnInit(): void {
   }
-
 }

@@ -16,6 +16,11 @@ import { ProductCardComponent } from './components/product-card/product-card.com
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
 import { RouterModule, Routes } from '@angular/router';
 
+import { CollapseDropdownComponent } from './components/collapse-dropdown/collapse-dropdown.component';
+
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +32,8 @@ import { RouterModule, Routes } from '@angular/router';
     AsideComponent,
     ProductsComponent,
     ProductCardComponent,
-    ProductDetailsComponent
+    ProductDetailsComponent,
+    CollapseDropdownComponent
   ],
   imports: [
     BrowserModule,

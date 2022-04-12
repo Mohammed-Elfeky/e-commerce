@@ -18,6 +18,7 @@ export class ProductsComponent implements OnInit {
   }
   
 
+
   ngOnInit(): void {
     this.myService.GetProductsInCatagory(this.categoryId).subscribe(
        (data)=>{this.products=data;},
