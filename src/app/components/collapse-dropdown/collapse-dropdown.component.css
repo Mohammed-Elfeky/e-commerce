@@ -33,7 +33,27 @@
     margin: 15px 0;
 }
 
-.form-range{
-    color: brown;
-    width: 80%;
+input[type=range] {
+    -webkit-appearance: none;
+    background-color: rgba(225, 225, 227, 1); 
+    height: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #6768AB;
+    border-radius: 50%;
+}
+
+.max,
+.min{
+    color: #2f2d3b;
+}
+
+.collaps__down-price{
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }

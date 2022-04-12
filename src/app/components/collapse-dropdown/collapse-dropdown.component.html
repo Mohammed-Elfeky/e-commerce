@@ -13,7 +13,11 @@
     <!-- if price show this -->
     <ng-template #price>
             <div class="collaps__down-price" [ngStyle]="{'height': isOpen ? '70px' : '0' }">
-                <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                <span class="min">0$</span>
+                    <input (input)="whenMove($event)" steps=".8" class="range-input" type="range" id="vol" name="vol" min="0" max="50">
+                <span class="max">{{rangeVal}}$</span>
             </div>
     </ng-template>
+
+    <button (click)="whenclick()">test</button>
 </div>

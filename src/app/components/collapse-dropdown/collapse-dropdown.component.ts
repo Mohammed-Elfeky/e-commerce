@@ -6,6 +6,9 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./collapse-dropdown.component.css']
 })
 export class CollapseDropdownComponent implements OnInit {
+  @Input()
+  testPRICE:number=0;
+  rangeVal:any=50;
   isOpen:boolean=false;
   @Input()
   title:string="";
@@ -17,11 +20,6 @@ export class CollapseDropdownComponent implements OnInit {
     "red",
     "black",
     "green",
-    "brown",
-    "green",
-    "brown",
-    "red",
-    
   ];
   constructor() { }
 
@@ -29,7 +27,12 @@ export class CollapseDropdownComponent implements OnInit {
     console.log(this.isOpen)
   }
   whenClickUp(){
-    console.log("hi")
     this.isOpen=!this.isOpen
+  }
+  whenMove(event:any){
+    this.rangeVal=event.target.value;
+  }
+  whenclick(){
+    this.testPRICE++
   }
 }
