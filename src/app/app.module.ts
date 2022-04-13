@@ -14,11 +14,12 @@ import { AsideComponent } from './components/aside/aside.component';
 import { ProductsComponent } from './components/products/products.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
-import { RouterModule, Routes } from '@angular/router';
 
 import { CollapseDropdownComponent } from './components/collapse-dropdown/collapse-dropdown.component';
 import { ProductSliderComponent } from './components/product-slider/product-slider.component';
-
+import { ProductInfoComponent } from './components/product-info/product-info.component';
+import { AdminProductsComponent } from './components/admin-products/admin-products.component';
+import { ProductFormComponent } from './components/product-form/product-form.component';
 
 
 
@@ -35,7 +36,10 @@ import { ProductSliderComponent } from './components/product-slider/product-slid
     ProductCardComponent,
     ProductDetailsComponent,
     CollapseDropdownComponent,
-    ProductSliderComponent
+    ProductSliderComponent,
+    ProductInfoComponent,
+    AdminProductsComponent,
+    ProductFormComponent
   ],
   imports: [
     BrowserModule,

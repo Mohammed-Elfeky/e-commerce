@@ -15,7 +15,7 @@ export class ProductSliderComponent implements OnInit, OnChanges {
   }
   ngOnChanges(changes: SimpleChanges) {
     if (changes['product']) {
-        this.images=changes['product'].currentValue[0]['images']
+      this.images = changes['product'].currentValue[0]['images']
     }
-}
+  }
 }
