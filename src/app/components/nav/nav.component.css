@@ -36,3 +36,31 @@ font-weight:500;
 ul{
    text-align: center;
 }
+
+.navbar-collapse{
+    flex-grow: 0;
+}
+
+.form-inline{
+    flex-grow: 0;
+}
+
+form{
+    flex-wrap: nowrap;
+}
+.navbar{
+    justify-content: space-between;
+}
+
+@media (max-width:400px) {
+    .navbar-toggler{
+        display: block;
+        margin-right: auto;
+    }
+}
+
+@media (min-width:400px) {
+    #logo{
+        transform: translateX(45px);
+    }
+}
