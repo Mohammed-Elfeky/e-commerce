@@ -20,6 +20,9 @@ import { ProductSliderComponent } from './components/product-slider/product-slid
 import { ProductInfoComponent } from './components/product-info/product-info.component';
 import { AdminProductsComponent } from './components/admin-products/admin-products.component';
 import { ProductFormComponent } from './components/product-form/product-form.component';
+import { AdminComponent } from './components/admin/admin.component';
+import { AdminDashboardComponent } from './components/admin-dashboard/admin-dashboard.component';
+import { AdminAsideComponent } from './components/admin-aside/admin-aside.component';
 
 
 
@@ -39,7 +42,10 @@ import { ProductFormComponent } from './components/product-form/product-form.com
     ProductSliderComponent,
     ProductInfoComponent,
     AdminProductsComponent,
-    ProductFormComponent
+    ProductFormComponent,
+    AdminComponent,
+    AdminDashboardComponent,
+    AdminAsideComponent
   ],
   imports: [
     BrowserModule,
