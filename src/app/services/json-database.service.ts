@@ -11,7 +11,7 @@ interface product{
   "numberOfAvailableItems": number,
   "numberOfSoldItems": number,
   "inSale": boolean,
-  "priceInSale": number,
+  "priceBeforeSale": number,
   "images": string[],
   "Name": string,
   "price": number,
@@ -34,7 +34,7 @@ export class JsonDatabaseService {
 
 
 
-  BaseURL = "http://localhost:3002";
+  BaseURL = "http://localhost:3000";
   constructor(private myHttp: HttpClient) { }
 
   GetAllCategories(){
@@ -43,7 +43,16 @@ export class JsonDatabaseService {
   GetProductsInCatagory(_CategorieId:number){
     return this.myHttp.get<product[]>(`${this.BaseURL}/Products?CategorieId=${_CategorieId}`);
   }
+  GetProductsInCatagoryByColor(_CategorieId:number,_color:string){
+    console.log(`${this.BaseURL}/Products?CategorieId=${_CategorieId}&color=${_color}`);
+    return this.myHttp.get<product[]>(`${this.BaseURL}/Products?CategorieId=${_CategorieId}&color=${_color}`);
+  }
+  GetProductsInCatagoryByPrice(_CategorieId:number,_price:number){
+    console.log(`${this.BaseURL}/Products?CategorieId=${_CategorieId}&price_lte=${_price}`);
+    return this.myHttp.get<product[]>(`${this.BaseURL}/Products?CategorieId=${_CategorieId}&price_lte=${_price}`);
+  }
   GetProductDetails(_productId:number){
+    console.log(`${this.BaseURL}/Products?id=${_productId}`);
     return this.myHttp.get<product>(`${this.BaseURL}/Products?id=${_productId}`);
   }
   AddNewProduct(_product:product){

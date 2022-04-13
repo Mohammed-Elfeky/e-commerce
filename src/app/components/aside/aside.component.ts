@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-aside',
@@ -6,10 +6,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aside.component.css']
 })
 export class AsideComponent implements OnInit {
-
+  @Input()
+  categoryID:number=0;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @Output() colorToProducts = new EventEmitter();
+  getColorFromCollaps(color:string){
+    console.log("event aside "+color);
+      this.colorToProducts.emit(color);
+  }
+@Output() priceToProducts = new EventEmitter();
+  getPriceFromCollaps(price:number){
+    this.priceToProducts.emit(price);
   }
 
 }

@@ -1,1 +1,9 @@
-<p>aside works!</p>
+<app-collapse-dropdown
+  [title]="'Color'"
+  (colorEvent)="getColorFromCollaps($event)"
+></app-collapse-dropdown>
+<app-collapse-dropdown
+  [categoryID]="categoryID"
+  (priceEvent)="getPriceFromCollaps($event)"
+  [title]="'Price'"
+></app-collapse-dropdown>

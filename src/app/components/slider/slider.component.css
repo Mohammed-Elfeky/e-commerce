@@ -1,0 +1,31 @@
+.carousel-caption{
+    top:40%;
+    left: 50%;
+    transform: translateX(-50%)
+}
+.black-layer{
+    background-color: rgba(0, 0, 0, .5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.heading{
+    font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+}
+.infoPart{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    font-family: 'Barlow', sans-serif;
+}
+
+.myBtn{
+    color: rgb(47, 45, 59);
+    background-color: #fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
