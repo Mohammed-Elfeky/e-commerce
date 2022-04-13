@@ -17,6 +17,7 @@ import { ProductDetailsComponent } from './components/product-details/product-de
 import { RouterModule, Routes } from '@angular/router';
 
 import { CollapseDropdownComponent } from './components/collapse-dropdown/collapse-dropdown.component';
+import { ProductSliderComponent } from './components/product-slider/product-slider.component';
 
 
 
@@ -33,7 +34,8 @@ import { CollapseDropdownComponent } from './components/collapse-dropdown/collap
     ProductsComponent,
     ProductCardComponent,
     ProductDetailsComponent,
-    CollapseDropdownComponent
+    CollapseDropdownComponent,
+    ProductSliderComponent
   ],
   imports: [
     BrowserModule,

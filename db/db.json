@@ -11,7 +11,7 @@
       "Description": "high quality men's sweaters made of cotton"
     },
     {
-      "ID": 3,
+      "id": 3,
       "Name": "Furniture",
       "Description": "furniture category"
     },
@@ -383,7 +383,7 @@
       ]
     },
     {
-      "ID": 21,
+      "id": 21,
       "Name": "Dressing Table",
       "CategorieId": 3,
       "color": "white",
@@ -401,7 +401,7 @@
       "Description": "infiniwe Dressing Table Makeup Vanity Desk Small Apartment Furniture-Home Office Console Simple Writing Desk Learning Computer Desk for Narrow Small"
     },
     {
-      "ID": 22,
+      "id": 22,
       "Name": "sofa",
       "CategorieId": 3,
       "color": "blue",
@@ -419,7 +419,7 @@
       "Description": "Rivet Frederick Mid-Century Channel Tufted Velvet Sofa Couch, 77.5'W, Navy Blue"
     },
     {
-      "ID": 23,
+      "id": 23,
       "Name": "Bed",
       "CategorieId": 3,
       "color": "black",
@@ -437,7 +437,7 @@
       "Description": "ZINUS Mia Metal Platform Bed Frame with Headboard / Wood Slat Support / No Box Spring Needed / Easy Assembly, King"
     },
     {
-      "ID": 24,
+      "id": 24,
       "Name": "Office chair",
       "CategorieId": 3,
       "color": "red",
@@ -455,7 +455,7 @@
       "Description": " Featuring reliable ergonomic support, Articulate comes with a breathable mesh back, passive lumbar support, and generously padded and contoured 6” thick mesh seat cushion"
     },
     {
-      "ID": 25,
+      "id": 25,
       "Name": "Office desk",
       "CategorieId": 3,
       "color": "black",
@@ -473,7 +473,7 @@
       "Description": "JOISCOPE Home Office Computer Desk,Small Study Writing Desk with Wooden Storage Shelf,2-Tier Industrial Morden Laptop Table with Splice Board,47 inches"
     },
     {
-      "ID": 26,
+      "id": 26,
       "Name": "Shoe organizer",
       "CategorieId": 3,
       "color": "black",
@@ -491,7 +491,7 @@
       "Description": "Shoe Rack Shoe Shelf Shoe Storage Organizer with Side Hooks For Entryway, 24-30 Pairs Metal Shoe Rack Taller Shoes Boots Organizer"
     },
     {
-      "ID": 27,
+      "id": 27,
       "Name": "Night stands",
       "CategorieId": 3,
       "color": "black",
@@ -509,7 +509,7 @@
       "Description": "Nathan James Harper Mid-Century Side, 2-Drawer Nightstand, Accent or End Table with Storage, Wood, Black/Brown"
     },
     {
-      "ID": 28,
+      "id": 28,
       "Name": "Glass table",
       "CategorieId": 3,
       "color": "white",
@@ -527,7 +527,7 @@
       "Description": "Round Glass Kitchen Dining Table Modern Leisure Table with Wood Legs for Kitchen Dining Room & Living Room 31.5'"
     },
     {
-      "ID": 29,
+      "id": 29,
       "Name": "Chair",
       "CategorieId": 3,
       "color": "yellow",
@@ -545,7 +545,7 @@
       "Description": "Mason Mid-Century Modern Tuft Back Recliner (Qty of 1, Fabric/Muted Yellow)"
     },
     {
-      "ID": 30,
+      "id": 30,
       "Name": "TV table",
       "CategorieId": 3,
       "color": "burlywood",
