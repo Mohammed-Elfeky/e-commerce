@@ -1,66 +1,59 @@
-a{
-    font-family: 'Roboto', sans-serif;
-    color: black;
+a {
+  font-family: "Roboto", sans-serif;
+  color: black;
 }
 
-.nav-item:active a{
-    color:#6768ab;
-    text-decoration: underline;
+.nav-item:active a {
+  color: #6768ab;
+  text-decoration: underline;
 }
 
-#logo{
-    /* width: 100%;  */
-    text-align: center;
-
+#logo {
+  /* width: 100%;  */
+  text-align: center;
 }
 
-.nav-item{
+.nav-item {
   font-size: larger;
-    margin:5px;
-    font-weight: 500;
+  margin: 5px;
+  font-weight: 500;
 }
-form{
-    text-align: right;
-    /* margin-left:300px; */
-    margin-top: 5px;
+form {
+  text-align: right;
+  /* margin-left:300px; */
+  margin-top: 5px;
 }
 /* i{
 color: #474878;
 } */
-.navbar-brand{
-font-size: xx-large;
-font-weight:500;
-/* text-align: center; */
+.navbar-brand {
+  font-size: xx-large;
+  font-weight: 500;
+  /* text-align: center; */
 }
 
-ul{
-   text-align: center;
+ul {
+  text-align: center;
 }
 
-.navbar-collapse{
-    flex-grow: 0;
+.navbar-collapse {
+  flex-grow: 0;
 }
 
-.form-inline{
-    flex-grow: 0;
+.form-inline {
+  flex-grow: 0;
 }
 
-form{
-    flex-wrap: nowrap;
+form {
+  flex-wrap: nowrap;
 }
-.navbar{
-    justify-content: space-between;
-}
-
-@media (max-width:400px) {
-    .navbar-toggler{
-        display: block;
-        margin-right: auto;
-    }
+.navbar {
+  justify-content: space-between;
 }
 
-@media (min-width:400px) {
-    #logo{
-        transform: translateX(45px);
-    }
+@media (max-width: 400px) {
+  .navbar-toggler {
+    display: block;
+    margin-right: auto;
+  }
 }
