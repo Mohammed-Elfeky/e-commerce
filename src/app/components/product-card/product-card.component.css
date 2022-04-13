@@ -82,3 +82,8 @@ a {
   color: #fff;
   max-width: 280px;
 }
+
+
+.card-body {
+  padding-top: 0;
+}

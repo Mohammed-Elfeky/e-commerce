@@ -654,7 +654,7 @@
     },
     {
       "id": 36,
-      "Name": "Laptop ASUS X509FA-BR949T",
+      "Name": "Laptop ASUS ",
       "price": 7000,
       "CategorieId": 4,
       "brand": "ASUS",
@@ -726,7 +726,7 @@
     },
     {
       "id": 40,
-      "Name": "Lenovo IdeaPad 5 Laptop",
+      "Name": "Lenovo IdeaPad",
       "price": 12490,
       "CategorieId": 4,
       "brand": "Lenovo",

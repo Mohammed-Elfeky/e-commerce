@@ -10,9 +10,17 @@
       [ngClass]="{ active: k == 0 }"
       class="carousel-item"
     >
-      <img [src]="img" class="img-fluid" alt="" />
+      <!-- <img [src]="img" class="img-fluid" alt="" /> -->
+      <div class="item_img" [style.background-image]="'url('+img+')'"></div>
     </div>
   </div>
+
+
+
+
+
+
+
   <!-- side images -->
   <ol class="carousel-indicators">
     <li
@@ -22,6 +30,7 @@
       [ngClass]="{ active: i == 0 }"
     >
       <img [src]="img" class="d-block w-100" alt="" />
+
     </li>
   </ol>
 
