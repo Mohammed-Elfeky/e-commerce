@@ -734,7 +734,7 @@
       "numberOfAvailableItems": 9,
       "numberOfSoldItems": 7,
       "inSale": false,
-      "priceInSale": 12490,
+      "priceBeforeSale": 12490,
       "images": [
         "assets/images/4-10-1.jpg",
         "assets/images/4-10-2.jpg",
