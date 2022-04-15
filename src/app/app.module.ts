@@ -51,7 +51,6 @@ import { UserComponent } from './components/USERcomp/user/user.component';
   ],
   imports: [
     BrowserModule,
-    BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,

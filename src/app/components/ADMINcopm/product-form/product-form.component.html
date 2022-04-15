@@ -1,1 +1,200 @@
-<p>product-form works!</p>
+<div class="container-xxl flex-grow-1 container-p-y">
+    <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Account Settings /</span> Account</h4>
+
+    <div class="row">
+      <div class="col-md-12">
+        <ul class="nav nav-pills flex-column flex-md-row mb-3">
+          <li class="nav-item">
+            <a class="nav-link active" href="javascript:void(0);"><i class="bx bx-user me-1"></i> Account</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages-account-settings-notifications.html"
+              ><i class="bx bx-bell me-1"></i> Notifications</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pages-account-settings-connections.html"
+              ><i class="bx bx-link-alt me-1"></i> Connections</a
+            >
+          </li>
+        </ul>
+        <div class="card mb-4">
+          <h5 class="card-header">Profile Details</h5>
+          <!-- Account -->
+          <div class="card-body">
+            <div class="d-flex align-items-start align-items-sm-center gap-4">
+              <img
+                src="../assets/img/avatars/1.png"
+                alt="user-avatar"
+                class="d-block rounded"
+                height="100"
+                width="100"
+                id="uploadedAvatar"
+              />
+              <div class="button-wrapper">
+                <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                  <span class="d-none d-sm-block">Upload new photo</span>
+                  <i class="bx bx-upload d-block d-sm-none"></i>
+                  <input
+                    type="file"
+                    id="upload"
+                    class="account-file-input"
+                    hidden
+                    multiple
+                    accept="image/png, image/jpeg"
+                    (change)="whenSelectFile($event)"
+                  />
+                </label>
+                <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                  <i class="bx bx-reset d-block d-sm-none"></i>
+                  <span class="d-none d-sm-block">Reset</span>
+                </button>
+
+                <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
+              </div>
+            </div>
+          </div>
+          <hr class="my-0" />
+          <div class="card-body">
+            <!-- <form id="formAccountSettings" method="POST"> -->
+              <div class="row">
+
+                <div class="mb-3 col-md-6">
+                    <label for="ProductName" class="form-label">Product name</label>
+                    <input
+                      [(ngModel)]="ProductName"
+                      class="form-control"
+                      type="text"
+                      id="ProductName"
+                    />
+                    <small *ngIf="ProductNameNotValid">
+                      the name is required and must not be more than 20 chars
+                    </small>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="price" class="form-label">price</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      id="price"
+                      [(ngModel)]="price"
+                    />
+                    <small *ngIf="priceNotValid">
+                      the price must be more the 0
+                    </small>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="brand" class="form-label">brand</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="brand"
+                      [(ngModel)]="brand"
+                    />
+                    <small *ngIf="brandNotValid">
+                      the brand name is required 
+                    </small>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="color">Select your favorite color:</label>
+                    <input type="color" id="color" 
+                    [(ngModel)]="color"><br><br>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label for="AvailableItems" class="form-label">AvailableItems</label>
+                    <input
+                      class="form-control"
+                      type="number"
+                      id="AvailableItems"
+                      [(ngModel)]="AvailableItems"
+                    />
+                    <small *ngIf="AvailableItemsNotValid">
+                      Available Items must be more than 0             
+                    </small>
+                </div>
+
+                <div class="mb-3 col-md-6">
+                    <label class="form-label" for="inSale">inSale</label>
+                    <select id="inSale" class="select2 form-select" [(ngModel)]="inSale" >
+                      <option value="true">sale</option>
+                      <option value="">regular</option>
+                    </select>
+                    <small *ngIf="ProductNameNotValid">
+                      the name is required and must not be more than 20 chars
+                    </small>
+                </div>
+                
+                <div class="mb-3 col-md-6">
+                  <label class="form-label" for="Category">Category</label>
+                  <select 
+                    id="Category"
+                    class="select2 form-select" 
+                    [(ngModel)]="CategoryId"
+                    >
+                    <option  value="0">
+                      select a category
+                    </option>
+                    <option 
+                    *ngFor="let cat of categories" 
+                    [value]="cat.id"
+                    >{{cat.Name}}</option>
+                  </select>
+           
+                </div>
+
+
+                <div class="mb-3 col-md-6">
+                    <label for="priceBeforeSale" class="form-label">priceBeforeSale</label>
+                    <input
+                      [(ngModel)]="priceBeforeSale"
+                      class="form-control"
+                      type="number"
+                      id="priceBeforeSale"
+                    />
+                    <small *ngIf="priceBeforeSaleNotValid">
+                      the  price Before Sale must be more than zero 
+                      and must be less more than the price
+                    </small>
+                </div>
+                
+                <div class="mb-3 col-md-6">
+                    <label for="Description" class="form-label">Description</label>
+                    <input
+                      class="form-control"
+                      type="text"
+                      id="Description"
+                      [(ngModel)]="Description"
+                    />
+                    <small *ngIf="DescriptionNotValid">
+                      the Description is required
+                    </small>
+                </div>
+
+
+              </div>
+              <div class="mt-2">
+                <button type="button" (click)="whenClick()" class="btn btn-primary me-2">Save changes</button>
+                <button type="reset" class="btn btn-outline-secondary">Cancel</button>
+              </div>
+            <!-- </form> -->
+          </div>
+          <!-- /Account -->
+        </div>
+
+
+
+
+        <!--  -->
+
+
+
+
+        
+ 
+      </div>
+    </div>
+</div>

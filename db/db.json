@@ -654,7 +654,7 @@
     },
     {
       "id": 36,
-      "Name": "Laptop ASUS X509FA-BR949T",
+      "Name": "Laptop ASUS ",
       "price": 7000,
       "CategorieId": 4,
       "brand": "ASUS",
@@ -726,7 +726,7 @@
     },
     {
       "id": 40,
-      "Name": "Lenovo IdeaPad 5 Laptop",
+      "Name": "Lenovo IdeaPad",
       "price": 12490,
       "CategorieId": 4,
       "brand": "Lenovo",
@@ -734,13 +734,30 @@
       "numberOfAvailableItems": 9,
       "numberOfSoldItems": 7,
       "inSale": false,
-      "priceInSale": 12490,
+      "priceBeforeSale": 12490,
       "images": [
         "assets/images/4-10-1.jpg",
         "assets/images/4-10-2.jpg",
         "assets/images/4-10-3.jpg"
       ],
       "Description": "Lenovo IdeaPad 5 Laptop - 11th Intel Core i5-1135G7, 8GB RAM , 1TB HDD + 256GB SSD, Intel Iris Xe Graphics"
+    },
+    {
+      "Name": "test",
+      "price": 2000,
+      "brand": "brand",
+      "color": "#7f3d3d",
+      "numberOfAvailableItems": 20,
+      "CategorieId": "1",
+      "priceBeforeSale": 3000,
+      "Description": "desc",
+      "inSale": true,
+      "images": [
+        "assets/images/11.jpg",
+        "assets/images/22.jpg",
+        "assets/images/33.jpg"
+      ],
+      "id": 41
     }
   ]
 }

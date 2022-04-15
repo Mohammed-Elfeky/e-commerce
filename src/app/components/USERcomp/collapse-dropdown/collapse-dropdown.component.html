@@ -7,7 +7,7 @@
 
   <!-- if color show this -->
   <div
-    [ngStyle]="{ height: isOpen ? '300px' : '0' }"
+    [ngStyle]="{ height: isOpen ? '140px' : '0' }"
     *ngIf="title == 'Color'; else price"
     class="collaps__down-color"
   >
@@ -25,7 +25,7 @@
       class="collaps__down-price"
       [ngStyle]="{ height: isOpen ? '70px' : '0' }"
     >
-      <span class="min">0$</span>
+      <!-- <span class="min">0$</span> -->
       <input
         (input)="whenMove($event)"
         steps=".8"
@@ -34,7 +34,7 @@
         id="vol"
         name="vol"
         min="0"
-        max="50"
+        max="12000"
       />
       <span class="max">{{ rangeVal }}$</span>
     </div>
