@@ -26,7 +26,7 @@ let routes:Routes=[
       {path:"AddProduct",component:ProductFormComponent},
       {path:"EditProduct/:id",component:ProductFormComponent} 
     ]},
-  {path: '**', component: UserComponent}
+  {path: '**', redirectTo:'User',pathMatch:'full'}
 ]
 
 @NgModule({
