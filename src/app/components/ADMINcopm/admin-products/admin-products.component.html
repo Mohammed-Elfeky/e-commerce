@@ -1,0 +1,108 @@
+<!-- Basic Bootstrap Table -->
+<div class="card">
+  <h5 class="card-header">Products Table</h5>
+  <div class="table-responsive text-nowrap">
+    <table class="table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>Product Name</th>
+          <th>Brand</th>
+          <th>Price</th>
+          <th>Color</th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+      </thead>
+      <tbody class="table-border-bottom-0">
+        <tr *ngFor="let product of products | async">
+          <td></td>
+          <td>
+            <strong>{{ product.Name }}</strong>
+          </td>
+          <td>{{ product.brand }}</td>
+          <td>{{ product.price }}</td>
+          <td>
+            <span [ngStyle]="{ color: product.color }"
+              ><span
+                class="iconify colorCircle"
+                data-icon="akar-icons:circle-fill"
+                data-width="26"
+                data-height="26"
+              ></span
+            ></span>
+          </td>
+          <td>
+            <a [routerLink]="['/User/product/', product.id]">
+              <span
+                class="iconify"
+                data-icon="bi:info-circle"
+                data-width="26"
+                data-height="26"
+              ></span>
+            </a>
+          </td>
+          <td>
+            <a [routerLink]="['/Admin/EditProduct/', product.id]">
+              <span
+                class="iconify"
+                data-icon="akar-icons:edit"
+                data-width="26"
+                data-height="26"
+              ></span>
+            </a>
+          </td>
+          <td>
+            <a
+              data-toggle="modal"
+              data-target="#comfirm"
+              (click)="targetProduct = product.id"
+              ><span
+                class="iconify"
+                data-icon="ant-design:delete-twotone"
+                data-width="26"
+                data-height="26"
+              ></span
+            ></a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<!--/ Basic Bootstrap Table -->
+
+<div class="modal" tabindex="-1" role="dialog" id="comfirm">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Delete Product</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Are you sure you want to delete this product</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">
+          No
+        </button>
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-dismiss="modal"
+          (click)="deleteProduct()"
+        >
+          Yes
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
