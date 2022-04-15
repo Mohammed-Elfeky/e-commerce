@@ -22,9 +22,6 @@ export class ProductDetailsComponent implements OnInit {
       "assets/images/Tommy1.jpg",
   ]
 
-
-
-
   ngOnInit(): void {
     this.myService.GetProductDetails(this.productId).subscribe(
        (data)=>{
@@ -33,8 +30,5 @@ export class ProductDetailsComponent implements OnInit {
        (error)=>{console.log(error);}
     )
   }
-
   
-  
-
 }
