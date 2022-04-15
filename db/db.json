@@ -47,7 +47,7 @@
       "numberOfAvailableItems": 15,
       "numberOfSoldItems": 10,
       "inSale": true,
-      "priceBeforeSale": 40.0,
+      "priceBeforeSale": 40,
       "images": [
         "assets/images/fileOrganizer_1.jpg",
         "assets/images/fileOrganizer_2.jpg",
@@ -101,7 +101,7 @@
       "numberOfAvailableItems": 16,
       "numberOfSoldItems": 8,
       "inSale": true,
-      "priceBeforeSale": 90.0,
+      "priceBeforeSale": 90,
       "images": [
         "assets/images/projector_1.jpg",
         "assets/images/projector_2.jpg",
@@ -137,7 +137,7 @@
       "numberOfAvailableItems": 14,
       "numberOfSoldItems": 7,
       "inSale": true,
-      "priceBeforeSale": 15.0,
+      "priceBeforeSale": 15,
       "images": [
         "assets/images/calculator_1.jpg",
         "assets/images/calculator_2.jpg",
@@ -173,7 +173,7 @@
       "numberOfAvailableItems": 8,
       "numberOfSoldItems": 8,
       "inSale": true,
-      "priceBeforeSale": 30.0,
+      "priceBeforeSale": 30,
       "images": [
         "assets/images/riser_1.jpg",
         "assets/images/riser_2.jpg",
@@ -741,6 +741,23 @@
         "assets/images/4-10-3.jpg"
       ],
       "Description": "Lenovo IdeaPad 5 Laptop - 11th Intel Core i5-1135G7, 8GB RAM , 1TB HDD + 256GB SSD, Intel Iris Xe Graphics"
+    },
+    {
+      "Name": "test",
+      "price": 2000,
+      "brand": "brand",
+      "color": "#7f3d3d",
+      "numberOfAvailableItems": 20,
+      "CategorieId": "1",
+      "priceBeforeSale": 3000,
+      "Description": "desc",
+      "inSale": true,
+      "images": [
+        "assets/images/11.jpg",
+        "assets/images/22.jpg",
+        "assets/images/33.jpg"
+      ],
+      "id": 41
     }
   ]
 }

@@ -49,7 +49,6 @@ import { AdminAsideComponent } from './components/admin-aside/admin-aside.compon
   ],
   imports: [
     BrowserModule,
-    BrowserModule,
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
