@@ -16,8 +16,7 @@ let routes:Routes=[
       {path: '', redirectTo: 'category',pathMatch:'full'},
       {path:"category",component:CategoriesComponent},
       {path:"category/:id",component:ProductsComponent},
-      {path:"product/:id",component:ProductDetailsComponent},
-      {path: '**', component: UserComponent}
+      {path:"product/:id",component:ProductDetailsComponent}
     ]},
   {path:"Admin",component:AdminComponent,
     children: [
@@ -25,8 +24,7 @@ let routes:Routes=[
       {path: 'dashboard', component: AdminDashboardComponent},
       {path: 'products', component: AdminProductsComponent},
       {path:"AddProduct",component:ProductFormComponent},
-      {path:"EditProduct/:id",component:ProductFormComponent},
-      {path: '**', component: UserComponent}  
+      {path:"EditProduct/:id",component:ProductFormComponent} 
     ]},
   {path: '**', component: UserComponent}
 ]
