@@ -1,0 +1,39 @@
+.menu-link {
+  border-radius: 10px;
+  text-decoration: none;
+}
+.menu-item,
+.menu-inner {
+  width: 100%;
+}
+.layout-menu-fixed,
+.menu-link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex: 0 0 auto;
+  margin: 0;
+}
+.active,
+.menu {
+  width: auto;
+}
+.menu-collapsed:not(:hover) .menu-inner > .menu-item > .menu-link .menu-icon {
+  margin-left: -2rem;
+  width: 80%;
+  text-align: center;
+  margin-right: 0;
+}
+.menu-vertical .menu-inner > .menu-item {
+  width: 100%;
+}
+.app-brand-link {
+  text-decoration: none;
+}
+.menu {
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  min-width: 160px;
+}

@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Product } from '../app.component';
 
   //! run with this line
   //! json-server --watch db.json --port 3002
@@ -38,7 +39,11 @@ export class JsonDatabaseService {
   constructor(private myHttp: HttpClient) { }
 
   GetAllCategories(){
-    return this.myHttp.get<category>(`${this.BaseURL}/Categories`);
+    return this.myHttp.get<category[]>(`${this.BaseURL}/Categories`);
+  }
+  GetAllProducts(){
+    console.log(`${this.BaseURL}/Products`);
+    return this.myHttp.get<product[]>(`${this.BaseURL}/Products`);
   }
   GetProductsInCatagory(_CategorieId:number){
     return this.myHttp.get<product[]>(`${this.BaseURL}/Products?CategorieId=${_CategorieId}`);
@@ -60,8 +65,11 @@ export class JsonDatabaseService {
   }
   // UpdateProduct(_product:product){
 
-  // }
-  // DeleteProduct(_productId:number){
 
-  // }
+  
+  DeleteProduct(_productId:number){
+    console.log(`${this.BaseURL}/Products?id=${_productId}`);
+    return this.myHttp.delete(`${this.BaseURL}/Products/${_productId}`);
+  }
 }
+
