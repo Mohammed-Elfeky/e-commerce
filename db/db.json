@@ -747,15 +747,33 @@
       "brand": "br",
       "color": "#ad9248",
       "numberOfAvailableItems": 10,
-      "CategorieId": "1",
+      "CategorieId": "4",
       "priceBeforeSale": 30,
       "Description": "desc",
-      "inSale": false,
+      "inSale": true,
       "images": [
         "assets/images/22.jpg",
         "assets/images/33.jpg"
       ],
       "id": 41
+    },
+    {
+      "Name": "test",
+      "price": 20,
+      "brand": "br",
+      "color": "#529146",
+      "numberOfAvailableItems": 20,
+      "CategorieId": "1",
+      "priceBeforeSale": 30,
+      "Description": "desc",
+      "inSale": false,
+      "images": [
+        "assets/images/11.jpg",
+        "assets/images/22.jpg",
+        "assets/images/33.jpg",
+        "assets/images/download.jpg"
+      ],
+      "id": 42
     }
   ]
 }
