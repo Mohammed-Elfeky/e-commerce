@@ -1,7 +1,26 @@
+
+
+
+
 .carousel-caption{
     top:40%;
     left: 50%;
     transform: translateX(-50%)
+}
+@media (max-width:1115px) {
+    .carousel-caption{
+        top:25%;
+    }
+}
+@media (max-width:953px) {
+    .carousel-caption{
+        top:40%;
+    }
+}
+@media (max-width:650px) {
+    .carousel-caption{
+        top:30%;
+    }
 }
 .black-layer{
     background-color: rgba(0, 0, 0, .5);
@@ -16,16 +35,40 @@
     font-weight: 500;
     color: #fff;
 }
+@media (max-width:950px) {
+    .heading{
+        font-size: 20px;
+    }
+}
+@media (max-width:480px) {
+    .heading{
+       font-size:15px;
+    }
+}
 .infoPart{
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 20px;
     font-family: 'Barlow', sans-serif;
 }
-
+@media (max-width:950px) {
+    .infoPart{
+        font-size: 15px;
+    }
+}
+@media (max-width:730px) {
+    .infoPart{
+        display: none;
+    }
+}
 .myBtn{
     color: rgb(47, 45, 59);
     background-color: #fff;
     padding: 10px 30px;
     text-decoration: none;
+}
+@media (max-width:1020px) {
+    .myBtn{
+        display: none;
+    }
 }

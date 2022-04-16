@@ -35,7 +35,7 @@ export class JsonDatabaseService {
 
 
 
-  BaseURL = "http://localhost:3001";
+  BaseURL = "http://localhost:3000";
   constructor(private myHttp: HttpClient) { }
 
   GetAllCategories(){
