@@ -1,0 +1,10 @@
+.colorCircle {
+  border: 1px solid rgba(0, 0, 0, 0.842);
+  border-radius: 50%;
+}
+
+.table {
+  display: block;
+  overflow-y: scroll;
+  max-height: 550px;
+}
