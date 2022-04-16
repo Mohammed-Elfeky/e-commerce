@@ -8,23 +8,24 @@ import { ProductDetailsComponent } from './components/USERcomp/product-details/p
 import { ProductFormComponent } from './components/ADMINcopm/product-form/product-form.component';
 import { ProductsComponent } from './components/USERcomp/products/products.component';
 import { UserComponent } from './components/USERcomp/user/user.component';
+import { ProductSalesComponent } from './components/ADMINcopm/product-sales/product-sales.component';
 
 let routes:Routes=[
   {path:'',redirectTo:'User',pathMatch:'full'},
-  {path:"User",component:UserComponent,
+  {path:'User',component:UserComponent,
     children:[
       {path: '', redirectTo: 'category',pathMatch:'full'},
-      {path:"category",component:CategoriesComponent},
-      {path:"category/:id",component:ProductsComponent},
-      {path:"product/:id",component:ProductDetailsComponent}
+      {path:'category',component:CategoriesComponent},
+      {path:'category/:id',component:ProductsComponent},
+      {path:'product/:id',component:ProductDetailsComponent}
     ]},
   {path:"Admin",component:AdminComponent,
     children: [
       {path: '', redirectTo: 'dashboard',pathMatch:'full'},
       {path: 'dashboard', component: AdminDashboardComponent},
       {path: 'products', component: AdminProductsComponent},
-      {path:"AddProduct",component:ProductFormComponent},
-      {path:"EditProduct/:id",component:ProductFormComponent} 
+      {path:'AddProduct',component:ProductFormComponent},
+      {path:'EditProduct/:id',component:ProductFormComponent} 
     ]},
   {path: '**', redirectTo:'User',pathMatch:'full'}
 ]

@@ -1,3 +1,271 @@
-<p>admin-dashboard works!</p>
+<div>
+  <!--nav-->
+  <div class="mb-4 order-0">
+    <div class="card justify-content-end flex-row p-2">
+      <div class="col-sm-5 text-center text-sm-left user">
+        <!-- User -->
+        <div class="d-flex align-items-center">
+          <div class="flex-shrink-0 me-3">
+            <div class="avatar avatar-online">
+              <img
+                src="../assets/img/avatars/1.png"
+                alt
+                class="w-px-40 h-auto rounded-circle"
+              />
+            </div>
+          </div>
+          <div class="flex-grow-1">
+            <span class="fw-semibold d-block">John Doe</span>
+            <small class="text-muted">Admin</small>
+          </div>
+        </div>
+        <!--/ User -->
+      </div>
+    </div>
+  </div>
+  <!--nav-->
 
-<div style="height: 2000px"></div>
+  <!--congratulation-->
+  <div class="mb-4 order-0">
+    <div class="card">
+      <div class="d-flex align-items-end row">
+        <div class="col-sm-7">
+          <div class="card-body">
+            <h5 class="card-title text-primary">Congratulations John! 🎉</h5>
+            <p class="mb-4">
+              You have done <span class="fw-bold">72%</span> more sales today.
+              Check your new badge in your profile.
+            </p>
+
+            <a href="javascript:;" class="btn btn-sm btn-outline-primary"
+              >View Badges</a
+            >
+          </div>
+        </div>
+        <div class="col-sm-5 text-center text-sm-left">
+          <div class="card-body pb-0 px-0 px-md-4">
+            <img
+              src="assets/img/illustrations/man-with-laptop-light.png"
+              height="140"
+              alt="View Badge User"
+              data-app-dark-img="illustrations/man-with-laptop-dark.png"
+              data-app-light-img="illustrations/man-with-laptop-light.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--congratulation-->
+
+  <!-- Total Revenue -->
+  <div class="col-12 order-2 order-md-3 order-lg-2 mb-4">
+    <div class="card">
+      <div class="row row-bordered g-0">
+        <div class="col-md-8">
+          <h5 class="card-header m-0 me-2 pb-3">Total Sales</h5>
+          <div id="totalRevenueChart" class="px-2">
+            <app-chart></app-chart>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <div class="text-center">
+              <div class="dropdown">
+                <button
+                  class="btn btn-sm btn-outline-primary dropdown-toggle"
+                  type="button"
+                  id="growthReportId"
+                  data-bs-toggle="dropdown"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                >
+                  2022
+                </button>
+              </div>
+            </div>
+          </div>
+          <div id="growthChart"></div>
+          <div class="text-center fw-semibold pt-3 mb-2">
+            62% Company Growth
+          </div>
+
+          <div
+            class="d-flex px-xxl-4 px-lg-2 p-4 gap-xxl-3 gap-lg-1 gap-3 justify-content-between"
+          >
+            <div class="d-flex">
+              <div class="me-2">
+                <span class="badge bg-label-primary p-2"
+                  ><i class="bx bx-dollar text-primary"></i
+                ></span>
+              </div>
+              <div class="d-flex flex-column">
+                <small>2022</small>
+                <h6 class="mb-0">$32.5k</h6>
+              </div>
+            </div>
+            <div class="d-flex">
+              <div class="me-2">
+                <span class="badge bg-label-info p-2"
+                  ><i class="bx bx-wallet text-info"></i
+                ></span>
+              </div>
+              <div class="d-flex flex-column">
+                <small>2021</small>
+                <h6 class="mb-0">$41.2k</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--/ Total Revenue -->
+
+  <!-- Order Statistics -->
+  <div class="col-12 order-0 mb-4">
+    <div class="card h-100">
+      <div class="col-12">
+        <div
+          class="card-header d-flex align-items-center justify-content-between pb-0"
+        >
+          <div class="card-title mb-0">
+            <h5 class="m-0 me-2">Order Statistics</h5>
+            <small class="text-muted">42.82k Total Sales</small>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <div class="d-flex flex-column align-items-center gap-1">
+              <h2 class="mb-2">8,258</h2>
+              <span>Total Orders</span>
+            </div>
+          </div>
+
+          <ul class="p-0 m-0">
+            <a>
+              <li
+                (click)="changeId(1)"
+                [ngClass]="{ 'table-active': catId == 1 }"
+                class="d-inline-flex mb-4 pb-1 pr-2 w-50 m-0"
+              >
+                <div class="avatar flex-shrink-0 me-3">
+                  <span class="avatar-initial rounded bg-label-primary"
+                    ><span
+                      class="iconify"
+                      data-icon="fa6-solid:pen-ruler"
+                      data-width="24"
+                      data-height="24"
+                    ></span
+                  ></span>
+                </div>
+                <div
+                  class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2"
+                >
+                  <div class="me-2">
+                    <h6 class="mb-0">Office Supplies</h6>
+                    <small class="text-muted">Paper, Files and Folders</small>
+                  </div>
+                  <div class="user-progress">
+                    <small class="fw-semibold">82.5k</small>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a>
+              <li
+                (click)="changeId(2)"
+                [ngClass]="{ 'table-active': catId == 2 }"
+                class="d-inline-flex mb-4 pb-1 pl-2 w-50 m-0"
+              >
+                <div class="avatar flex-shrink-0 me-3">
+                  <span class="avatar-initial rounded bg-label-success"
+                    ><span
+                      class="iconify"
+                      data-icon="bx:closet"
+                      data-width="24"
+                      data-height="24"
+                    ></span
+                  ></span>
+                </div>
+                <div
+                  class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2"
+                >
+                  <div class="me-2">
+                    <h6 class="mb-0">Men's Sweaters</h6>
+                    <small class="text-muted">T-shirt, Jeans, Shoes</small>
+                  </div>
+                  <div class="user-progress">
+                    <small class="fw-semibold">23.8k</small>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a>
+              <li
+                (click)="changeId(3)"
+                [ngClass]="{ 'table-active': catId == 3 }"
+                class="d-inline-flex w-50 pr-2 m-0"
+              >
+                <div class="avatar flex-shrink-0 me-3">
+                  <span class="avatar-initial rounded bg-label-info"
+                    ><span
+                      class="iconify"
+                      data-icon="map:furniture-store"
+                      data-width="24"
+                      data-height="24"
+                    ></span
+                  ></span>
+                </div>
+                <div
+                  class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2"
+                >
+                  <div class="me-2">
+                    <h6 class="mb-0">Furniture</h6>
+                    <small class="text-muted">Desk and bed</small>
+                  </div>
+                  <div class="user-progress">
+                    <small class="fw-semibold">89k</small>
+                  </div>
+                </div>
+              </li>
+            </a>
+            <a>
+              <li
+                (click)="changeId(4)"
+                [ngClass]="{ 'table-active': catId == 4 }"
+                class="d-inline-flex pl-2 w-50"
+              >
+                <div class="avatar flex-shrink-0 me-3">
+                  <span class="avatar-initial rounded bg-label-secondary"
+                    ><span
+                      class="iconify"
+                      data-icon="fa-solid:laptop"
+                      data-width="24"
+                      data-height="24"
+                    ></span
+                  ></span>
+                </div>
+                <div
+                  class="d-flex w-100 flex-wrap align-items-center justify-content-between gap-2"
+                >
+                  <div class="me-2">
+                    <h6 class="mb-0">Laptops</h6>
+                    <small class="text-muted">Acer and Dell</small>
+                  </div>
+                  <div class="user-progress">
+                    <small class="fw-semibold">839k</small>
+                  </div>
+                </div>
+              </li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-12">
+        <ng-template #TextContainer></ng-template>
+      </div>
+    </div>
+  </div>
+  <!--/ Order Statistics -->
+</div>

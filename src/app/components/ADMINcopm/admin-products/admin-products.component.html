@@ -1,3 +1,46 @@
+<!-- Navbar -->
+
+<nav
+  class="mynavbar navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme mb-4"
+  id="layout-navbar"
+>
+  <div
+    class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none"
+  >
+    <!-- Search -->
+    <div class="navbar-nav align-items-center">
+      <div class="nav-item d-flex align-items-center">
+        <i class="bx bx-search fs-4 lh-0"></i>
+        <input
+          type="text"
+          class="form-control border-0 shadow-none"
+          placeholder="Search..."
+          aria-label="Search..."
+          [(ngModel)]="searchValue"
+          (change)="FindMatch()"
+        />
+      </div>
+    </div>
+    <!-- /Search -->
+  </div>
+
+  <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+    <ul class="navbar-nav flex-row align-items-center ms-auto">
+      <!-- User -->
+      <div class="avatar avatar-online">
+        <img
+          src="assets/img/avatars/1.png"
+          alt
+          class="w-px-40 h-auto rounded-circle"
+        />
+      </div>
+      <!--/ User -->
+    </ul>
+  </div>
+</nav>
+
+<!-- / Navbar -->
+
 <!-- Basic Bootstrap Table -->
 <div class="card">
   <h5 class="card-header">Products Table</h5>
@@ -56,7 +99,7 @@
           <td>
             <a
               data-toggle="modal"
-              data-target="#comfirm"
+              data-target="#confirm"
               (click)="targetProduct = product.id"
               ><span
                 class="iconify"
@@ -73,7 +116,7 @@
 </div>
 <!--/ Basic Bootstrap Table -->
 
-<div class="modal" tabindex="-1" role="dialog" id="comfirm">
+<div class="modal" tabindex="-1" role="dialog" id="confirm">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -88,7 +131,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <p>Are you sure you want to delete this product</p>
+        <p>Are you sure you want to delete this product?</p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">

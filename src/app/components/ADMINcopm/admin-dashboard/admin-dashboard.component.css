@@ -1,0 +1,21 @@
+.mynavbar {
+  width: 100%;
+  border-radius: 10px;
+}
+.today {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+}
+.today-text {
+  margin: 0;
+}
+.user {
+  max-width: 15em;
+}
+a {
+  text-decoration: none;
+}
+.table-active {
+  border-radius: 10px;
+  padding: 7px;
+}

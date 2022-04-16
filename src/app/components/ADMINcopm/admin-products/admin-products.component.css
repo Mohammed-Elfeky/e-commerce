@@ -6,5 +6,10 @@
 .table {
   display: block;
   overflow-y: scroll;
-  max-height: 550px;
+  max-height: 465px;
+}
+
+.mynavbar {
+  width: 100%;
+  border-radius: 10px;
 }
