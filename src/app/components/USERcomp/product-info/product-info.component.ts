@@ -9,8 +9,8 @@ import { Product } from 'src/app/app.component';
 export class ProductInfoComponent implements OnInit {
  @Input()
   product:Product=new Product();
-
   product_details:Product=new Product();
+
   images:any;
   constructor() { }
   ngOnInit(): void {

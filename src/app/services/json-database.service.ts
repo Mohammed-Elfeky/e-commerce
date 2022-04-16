@@ -67,7 +67,10 @@ export class JsonDatabaseService {
   AddNewProduct(_product:product){
     return this.myHttp.post(`${this.BaseURL}/products`,_product);
   }
-  
+
+  UpdateProductByID(id:any, product:any){
+    return this.myHttp.put(`${this.BaseURL}/products/${id}`,product);
+  }
   DeleteProduct(_productId:number){
     console.log(`${this.BaseURL}/Products?id=${_productId}`);
     return this.myHttp.delete(`${this.BaseURL}/Products/${_productId}`);

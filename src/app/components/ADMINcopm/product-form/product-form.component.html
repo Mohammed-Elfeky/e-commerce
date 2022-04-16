@@ -1,3 +1,4 @@
+{{productId}}
 <div class="container-xxl flex-grow-1 container-p-y">
     <h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">Account Settings /</span> Account</h4>
 
@@ -21,36 +22,41 @@
         <div class="card mb-4">
           <h5 class="card-header">Profile Details</h5>
           <!-- Account -->
-          <div class="card-body">
-            <div class="d-flex align-items-start align-items-sm-center gap-4">
-              <img
-                src="../assets/img/avatars/1.png"
-                alt="user-avatar"
-                class="d-block rounded"
-                height="100"
-                width="100"
-                id="uploadedAvatar"
-              />
-              <div class="button-wrapper">
-                <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
-                  <span class="d-none d-sm-block">Upload new photo</span>
-                  <i class="bx bx-upload d-block d-sm-none"></i>
-                  <input
-                    type="file"
-                    id="upload"
-                    class="account-file-input"
-                    hidden
-                    multiple
-                    accept="image/png, image/jpeg"
-                    (change)="whenSelectFile($event)"
-                  />
-                </label>
-                <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-                  <i class="bx bx-reset d-block d-sm-none"></i>
-                  <span class="d-none d-sm-block">Reset</span>
-                </button>
-
-                <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
+          <div *ngIf="!productId" >
+            <div class="card-body">
+              <div class="d-flex align-items-start align-items-sm-center gap-4">
+                <img
+                  src="../assets/img/avatars/1.png"
+                  alt="user-avatar"
+                  class="d-block rounded"
+                  height="100"
+                  width="100"
+                  id="uploadedAvatar"
+                />
+                <div class="button-wrapper">
+                  <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
+                    <span class="d-none d-sm-block">Upload new photo</span>
+                    <i class="bx bx-upload d-block d-sm-none"></i>
+                    <input
+                      type="file"
+                      id="upload"
+                      class="account-file-input"
+                      hidden
+                      multiple
+                      accept="image/png, image/jpeg"
+                      (change)="whenSelectFile($event)"
+                    />
+                  </label>
+                  <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
+                    <i class="bx bx-reset d-block d-sm-none"></i>
+                    <span class="d-none d-sm-block">Reset</span>
+                  </button>
+  
+                  <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
+                  <small *ngIf="imageNotValid">
+                    u must choose image
+                  </small>
+                </div>
               </div>
             </div>
           </div>
@@ -100,8 +106,12 @@
 
                 <div class="mb-3 col-md-6">
                     <label for="color">Select your favorite color:</label>
-                    <input type="color" id="color" 
-                    [(ngModel)]="color"><br><br>
+                    <br>
+                    <input
+
+                    type="color" id="color" 
+                    [(ngModel)]="color"
+                    >
                 </div>
 
                 <div class="mb-3 col-md-6">
@@ -120,11 +130,12 @@
                 <div class="mb-3 col-md-6">
                     <label class="form-label" for="inSale">inSale</label>
                     <select id="inSale" class="select2 form-select" [(ngModel)]="inSale" >
+                      <option value="*">choose a sale type</option>
                       <option value="true">sale</option>
-                      <option value="">regular</option>
+                      <option value="false">regular</option>
                     </select>
-                    <small *ngIf="ProductNameNotValid">
-                      the name is required and must not be more than 20 chars
+                    <small *ngIf="inSaleNotValid">
+                      u must choose sale type
                     </small>
                 </div>
                 
@@ -143,7 +154,9 @@
                     [value]="cat.id"
                     >{{cat.Name}}</option>
                   </select>
-           
+                  <small *ngIf="CategoryIdNotValid">
+                    u must choose category
+                  </small>
                 </div>
 
 
