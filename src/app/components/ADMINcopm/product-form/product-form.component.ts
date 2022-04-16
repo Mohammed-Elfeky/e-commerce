@@ -38,6 +38,7 @@ export class ProductFormComponent implements OnInit {
           this.brand=data[0].brand;
           this.color=data[0].color;
           this.AvailableItems=data[0].numberOfAvailableItems;
+          this.productSoldItems = data[0].numberOfSoldItems;
           this.CategoryId=data[0].CategorieId;
           this.priceBeforeSale=data[0].priceBeforeSale;
           this.Description=data[0].Description;
@@ -50,6 +51,8 @@ export class ProductFormComponent implements OnInit {
 
   }
 
+  productSoldItems:number = 0;
+  
   productId:any;
   touched:boolean=false;
   categories:any;
@@ -154,6 +157,7 @@ whenClick(){
     product.brand=this.brand;
     product.color=this.color;
     product.numberOfAvailableItems=this.AvailableItems;
+    product.numberOfSoldItems = this.productSoldItems;
     product.CategorieId=this.CategoryId;
     product.priceBeforeSale=this.priceBeforeSale;
     product.Description=this.Description;

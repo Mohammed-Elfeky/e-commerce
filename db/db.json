@@ -28,6 +28,7 @@
       "brand": "Amazon Basics",
       "color": "gray",
       "numberOfAvailableItems": 10,
+      "numberOfSoldItems": 7,
       "CategorieId": 1,
       "priceBeforeSale": 10,
       "Description": "Color:Black, Material:ABS 79%- metal 13%- other 8%, Model Number:E0620,Power Source Type:Manual, Size:4.92' x 5.20' x 2.87'",
