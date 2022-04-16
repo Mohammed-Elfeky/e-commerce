@@ -24,6 +24,8 @@ import { AdminComponent } from './components/ADMINcopm/admin/admin.component';
 import { AdminDashboardComponent } from './components/ADMINcopm/admin-dashboard/admin-dashboard.component';
 import { AdminAsideComponent } from './components/ADMINcopm/admin-aside/admin-aside.component';
 import { UserComponent } from './components/USERcomp/user/user.component';
+import { ChartComponent } from './components/ADMINcopm/chart/chart.component';
+import { ProductSalesComponent } from './components/ADMINcopm/product-sales/product-sales.component';
 
 
 
@@ -47,7 +49,12 @@ import { UserComponent } from './components/USERcomp/user/user.component';
     AdminComponent,
     AdminDashboardComponent,
     AdminAsideComponent,
-    UserComponent
+    UserComponent,
+    ChartComponent,
+    ProductSalesComponent
+  ],
+  entryComponents:[
+    ProductSalesComponent
   ],
   imports: [
     BrowserModule,

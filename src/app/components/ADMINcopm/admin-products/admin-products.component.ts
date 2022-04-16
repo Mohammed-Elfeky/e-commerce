@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { Product } from 'src/app/app.component';
 import { JsonDatabaseService } from 'src/app/services/json-database.service';
@@ -11,7 +11,7 @@ import { JsonDatabaseService } from 'src/app/services/json-database.service';
 export class AdminProductsComponent implements OnInit {
   products: any;
 
-  constructor(private myService:JsonDatabaseService,private router: Router) { 
+  constructor(private myService:JsonDatabaseService) { 
     this.products = this.myService.GetAllProducts();
   }
 
@@ -28,7 +28,17 @@ export class AdminProductsComponent implements OnInit {
         window.location.reload();
     },
     (err) => console.log(err));
-   // this.notifyDelete.emit(this.employee.id);
   }
 
+  searchValue:string = "";
+  FindMatch(){
+    console.log("search "+this.searchValue);
+    this.products = this.myService.GetProductByName(this.searchValue);
+  }
+  
+  ngOnChange(changes: SimpleChanges){
+    if(!changes['product'].firstChange){
+      console.log("products list updated");
+    }
+  }
 }

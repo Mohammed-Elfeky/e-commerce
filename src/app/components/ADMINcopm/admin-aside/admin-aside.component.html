@@ -24,8 +24,9 @@
 
   <ul class="menu-inner py-1 mt-3">
     <!-- Dashboard -->
-    <li class="menu-item active">
+    <li class="menu-item" [ngClass]="{ active: activeTab == 1 }">
       <a
+        (click)="activeTab = 1"
         [routerLink]="['./dashboard']"
         class="menu-link justify-content-center justify-content-md-start"
       >
@@ -39,8 +40,9 @@
       </a>
     </li>
     <!-- Products -->
-    <li class="menu-item">
+    <li class="menu-item" [ngClass]="{ active: activeTab == 2 }">
       <a
+        (click)="activeTab = 2"
         [routerLink]="['./products']"
         class="menu-link justify-content-center justify-content-md-start"
       >
@@ -54,8 +56,9 @@
       </a>
     </li>
     <!-- Add Product -->
-    <li class="menu-item">
+    <li class="menu-item" [ngClass]="{ active: activeTab == 3 }">
       <a
+        (click)="activeTab = 3"
         [routerLink]="['./AddProduct']"
         class="menu-link justify-content-center justify-content-md-start"
       >

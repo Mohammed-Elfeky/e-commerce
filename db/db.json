@@ -741,45 +741,6 @@
         "assets/images/4-10-3.jpg"
       ],
       "Description": "Lenovo IdeaPad 5 Laptop - 11th Intel Core i5-1135G7, 8GB RAM , 1TB HDD + 256GB SSD, Intel Iris Xe Graphics"
-    },
-    {
-      "Name": "test3",
-      "price": 29,
-      "brand": "fdds",
-      "color": "",
-      "numberOfAvailableItems": 5,
-      "CategorieId": "2",
-      "priceBeforeSale": 6,
-      "Description": "4343dfsfsdfsadfdsfsdff",
-      "inSale": false,
-      "images": [],
-      "id": 41
-    },
-    {
-      "Name": "test3",
-      "price": 29,
-      "brand": "fdds",
-      "color": "",
-      "numberOfAvailableItems": 5,
-      "CategorieId": "2",
-      "priceBeforeSale": 45,
-      "Description": "4343dfsfsdfsadfdsfsdff",
-      "inSale": false,
-      "images": [],
-      "id": 42
-    },
-    {
-      "Name": "test3",
-      "price": 29,
-      "brand": "fdds",
-      "color": "",
-      "numberOfAvailableItems": 5,
-      "CategorieId": "2",
-      "priceBeforeSale": 45,
-      "Description": "4343dfsfsdfsadfdsfsdff",
-      "inSale": false,
-      "images": [],
-      "id": 43
     }
   ]
 }

@@ -19,7 +19,7 @@ export class ProductCardComponent implements OnInit {
 
   ngOnChanges(changes:any){
     //console.log(changes);
-    this.link = `/product/${this.product.id}`;
+    this.link = `/User/product/${this.product.id}`;
     this.imgSrc = `${ this.product.images[0] }`
   }
 
