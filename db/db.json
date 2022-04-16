@@ -23,22 +23,21 @@
   ],
   "Products": [
     {
-      "id": 1,
-      "CategorieId": 1,
+      "Name": "Rotary Pencil Sharpe",
+      "price": 9,
+      "brand": "Amazon Basics",
       "color": "gray",
       "numberOfAvailableItems": 10,
-      "numberOfSoldItems": 5,
-      "inSale": false,
+      "CategorieId": 1,
       "priceBeforeSale": 10,
+      "Description": "Color:Black, Material:ABS 79%- metal 13%- other 8%, Model Number:E0620,Power Source Type:Manual, Size:4.92' x 5.20' x 2.87'",
+      "inSale": true,
       "images": [
         "assets/images/RotaryPincle_1.jpg",
         "assets/images/RotaryPincle_2.jpg",
         "assets/images/RotaryPincle_3.jpg"
       ],
-      "Name": "Rotary Pencil Sharpener",
-      "price": 9,
-      "brand": "Amazon Basics",
-      "Description": "Color:Black, Material:ABS 79%- metal 13%- other 8%, Model Number:E0620,Power Source Type:Manual, Size:4.92' x 5.20' x 2.87'"
+      "id": 1
     },
     {
       "id": 2,
@@ -741,45 +740,6 @@
         "assets/images/4-10-3.jpg"
       ],
       "Description": "Lenovo IdeaPad 5 Laptop - 11th Intel Core i5-1135G7, 8GB RAM , 1TB HDD + 256GB SSD, Intel Iris Xe Graphics"
-    },
-    {
-      "Name": "test3",
-      "price": 29,
-      "brand": "fdds",
-      "color": "",
-      "numberOfAvailableItems": 5,
-      "CategorieId": "2",
-      "priceBeforeSale": 6,
-      "Description": "4343dfsfsdfsadfdsfsdff",
-      "inSale": false,
-      "images": [],
-      "id": 41
-    },
-    {
-      "Name": "test3",
-      "price": 29,
-      "brand": "fdds",
-      "color": "",
-      "numberOfAvailableItems": 5,
-      "CategorieId": "2",
-      "priceBeforeSale": 45,
-      "Description": "4343dfsfsdfsadfdsfsdff",
-      "inSale": false,
-      "images": [],
-      "id": 42
-    },
-    {
-      "Name": "test3",
-      "price": 29,
-      "brand": "fdds",
-      "color": "",
-      "numberOfAvailableItems": 5,
-      "CategorieId": "2",
-      "priceBeforeSale": 45,
-      "Description": "4343dfsfsdfsadfdsfsdff",
-      "inSale": false,
-      "images": [],
-      "id": 43
     }
   ]
 }
