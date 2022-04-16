@@ -57,3 +57,16 @@ form {
     margin-right: auto;
   }
 }
+
+
+.navbar{
+  position: relative;
+}
+@media (min-width:1085px){
+  .navbar-brand{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+}
