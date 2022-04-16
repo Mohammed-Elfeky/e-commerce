@@ -13,7 +13,12 @@ export class ProductSalesComponent implements OnInit {
 
   soldChart:any;
   availableChart:any;
+  doughnut:any;
+  polarArea:any;
+  radar:any;
 
+
+  colors:any;
   data:any;
 
   availableProducts:number[]=[];
@@ -42,6 +47,9 @@ async getData(){
         this.data = this.toLabels(data);
         this.getAvailable_SoldProducts();  
         this.drawChart();
+        this.drawdoughnut();
+        this.drawPolarArea();
+        this.drawRadar()
       },
       (err)=>console.log(err)
   );
@@ -59,9 +67,11 @@ async getData(){
 getAvailable_SoldProducts(){
   this.soldProducts = [];
   this.availableProducts = [];
+  this.colors=[]
   this.products.forEach((product: any) => {
     this.availableProducts.push(product.numberOfAvailableItems);
     this.soldProducts.push(product.numberOfSoldItems);
+    this.colors.push("#"+Math.floor(Math.random()*16777215).toString(16))
   });
 }
 
@@ -77,6 +87,7 @@ drawChart(){
             datasets: [{
                 label: '# of sold Products',
                 data: this.soldProducts,
+                backgroundColor:this.colors
             }]
         },
         options: {
@@ -99,6 +110,7 @@ drawChart(){
             datasets: [{
                 label: '# of available Products',
                 data: this.availableProducts,
+                backgroundColor:this.colors
             }]
         },
         options: {
@@ -117,6 +129,104 @@ drawChart(){
     
   }
 
+
+drawdoughnut(){
+  this.doughnut = new Chart("ctx4", {
+    type: 'doughnut',
+    data: {
+        labels: this.data,
+        datasets: [{
+            label: '# of sold Products',
+            data: this.soldProducts,
+            backgroundColor:this.colors
+        }]
+    },
+    options: {
+      responsive:true,
+      scales: {
+        xAxes: {
+            ticks: {
+                autoSkip: false,
+                maxRotation: 90,
+                minRotation: 90
+            }
+        }
+    }
+    }
+});
+}
+
+
+drawPolarArea(){
+  this.doughnut = new Chart("ctx5", {
+    type: 'polarArea',
+    data: {
+        labels: this.data,
+        datasets: [{
+            label: '# of sold Products',
+            data: this.soldProducts,
+            backgroundColor:this.colors
+        }]
+    },
+    options: {
+      responsive:true,
+      scales: {
+        xAxes: {
+            ticks: {
+                // autoSkip: false,
+                // maxRotation: 90,
+                // minRotation: 90
+            }
+        }
+    }
+    }
+});
+}
+
+
+drawRadar(){
+  this.radar = new Chart("ctx6", {
+    type: 'radar',
+    data: {
+        labels: this.data,
+        datasets: [{
+            label: '# of sold Products',
+            data: this.soldProducts,
+            fill: true,
+            backgroundColor: 'rgba(54, 162, 235, 0.2)',
+            borderColor: 'rgb(54, 162, 235)',
+            pointBackgroundColor: 'rgb(54, 162, 235)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(54, 162, 235)'
+        },
+        {
+            label: '# of available Products',
+            data: this.availableProducts,
+            fill: true,
+            backgroundColor: 'rgba(255, 99, 132, 0.2)',
+            borderColor: 'rgb(255, 99, 132)',
+            pointBackgroundColor: 'rgb(255, 99, 132)',
+            pointBorderColor: '#fff',
+            pointHoverBackgroundColor: '#fff',
+            pointHoverBorderColor: 'rgb(255, 99, 132)'
+        }
+      ]
+    },
+    options: {
+      responsive:true,
+      scales: {
+        xAxes: {
+            ticks: {
+                // autoSkip: false,
+                // maxRotation: 90,
+                // minRotation: 90
+            }
+        }
+    }
+    }
+});
+}
 
   //  ngOnDestroy() {
   //       this.subscription.unsubscribe()

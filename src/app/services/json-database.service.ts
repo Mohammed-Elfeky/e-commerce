@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { Product } from '../app.component';
 
   //! run with this line
-  //! json-server --watch db.json --port 3002
+  //! json-server --watch db.json --port
 
 interface product{
   "id": number,
@@ -35,7 +35,7 @@ export class JsonDatabaseService {
 
 
 
-  BaseURL = "http://localhost:3000";
+  BaseURL = "http://localhost:3001";
   constructor(private myHttp: HttpClient) { }
 
   GetAllCategories(){
