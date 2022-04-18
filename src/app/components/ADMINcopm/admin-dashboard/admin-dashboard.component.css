@@ -19,3 +19,7 @@ a {
   border-radius: 10px;
   padding: 7px;
 }
+.display {
+  width: 4em;
+  height: 4em;
+}

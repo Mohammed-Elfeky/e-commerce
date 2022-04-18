@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-nav',
@@ -7,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
   logoWidth:string="auto"
-  constructor() { }
+  constructor(private actrouter:ActivatedRoute,private router:Router) { }
 
   ngOnInit(): void {
   }
@@ -17,5 +19,10 @@ export class NavComponent implements OnInit {
     }else{
       this.logoWidth="auto"
     }
+  }
+  searchValue:string = "";
+  goSearch(){
+    console.log(this.searchValue)
+    this.router.navigate(['/User/category/search', {term: this.searchValue}]);
   }
 }

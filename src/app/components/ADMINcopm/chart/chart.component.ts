@@ -64,12 +64,19 @@ toLabels(before:any){
 
 drawChart(){
     this.chart = new Chart("ctx1", {
-        type: 'bar',
+        type: 'doughnut',
         data: {
             labels: this.data,
             datasets: [{
                 label: '# of sold items in Category',
                 data: this.categorySales,
+    backgroundColor: [
+      'rgb(255, 99, 132)',
+      'rgb(54, 162, 235)',
+      'rgb(255, 205, 86)',
+      'rgb(75, 192, 192)'
+    ],
+    hoverOffset: 4
             }]
         },
         options: {
