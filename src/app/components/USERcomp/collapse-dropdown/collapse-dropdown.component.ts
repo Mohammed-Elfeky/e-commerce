@@ -29,7 +29,7 @@ export class CollapseDropdownComponent implements OnInit {
   constructor(private myService:JsonDatabaseService,myRoute:ActivatedRoute) { }
 
   ngOnInit(): void {
-    console.log(this.isOpen)
+    //console.log(this.isOpen)
   }
   whenClickUp(){
     this.isOpen=!this.isOpen
