@@ -14,23 +14,38 @@ export class ProductsComponent implements OnInit {
   products:Product[] = [];
 
   constructor(private myService:JsonDatabaseService,private myRoute:ActivatedRoute) { 
-
+    this.GetProducts();
     this.myRoute.params.subscribe( params => {
       if(params['id'] == 'search'){
         this.FindMatch(params['term'])
       }else{
-        this.getCategoryProducts();
+        this.categoryId = params['id']
       }
     });
   }
 
 
+  holeProductsList:Product[] = [];
+  GetProducts(){
+    this.myService.GetAllProducts().subscribe(
+        (data)=>{this.holeProductsList=data;
+      this.filterByCatId();},
+       (error)=>{console.log(error);}
+    );
+  }
+  filterByCatId(){
+    this.products = this.holeProductsList.filter(prod => prod.CategorieId == this.categoryId);
+  }
   FindMatch(searchValue:string){
     console.log("search "+searchValue);
-    this.myService.GetProductByName(searchValue).subscribe(
-       (data)=>{this.products=data;},
-       (error)=>{console.log(error);}
-     )
+    // this.myService.GetProductByName(searchValue).subscribe(
+    //    (data)=>{this.products=data;},
+    //    (error)=>{console.log(error);}
+    //  );
+    console.log(`find match`);
+    this.products = this.holeProductsList.filter(prod=> 
+      prod.Name.toLowerCase().includes(searchValue.toLowerCase())
+      )
   }
 
 
@@ -42,16 +57,20 @@ export class ProductsComponent implements OnInit {
   }
   getColorFromChild(color:string){
     console.log("event Products "+color);
-    this.myService.GetProductsInCatagoryByColor(this.categoryId,color).subscribe(
-       (data)=>{this.products=data;},
-       (error)=>{console.log(error);}
-     )
+    // this.myService.GetProductsInCatagoryByColor(this.categoryId,color).subscribe(
+    //    (data)=>{this.products=data;},
+    //    (error)=>{console.log(error);}
+    //  )
+    console.log(this.holeProductsList);
+    this.products = this.holeProductsList.filter(prod => prod.color == color)
   }
   getPriceFromChild(price:number){
-    this.myService.GetProductsInCatagoryByPrice(this.categoryId,price).subscribe(
-      (data)=>{this.products=data;},
-      (error)=>{console.log(error);}
-    )
+    // this.myService.GetProductsInCatagoryByPrice(this.categoryId,price).subscribe(
+    //   (data)=>{this.products=data;},
+    //   (error)=>{console.log(error);}
+    // )
+    this.products = this.holeProductsList.filter(prod => prod.price <= price)
+
   }
   
   ngOnInit(): void { }

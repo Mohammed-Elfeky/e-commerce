@@ -9,10 +9,18 @@ import { JsonDatabaseService } from 'src/app/services/json-database.service';
   styleUrls: ['./admin-products.component.css']
 })
 export class AdminProductsComponent implements OnInit {
-  products: any;
+  products: Product[] | undefined;
+  holeProducts: Product[] = [];
 
   constructor(private myService:JsonDatabaseService) { 
-    this.products = this.myService.GetAllProducts();
+    this.myService.GetAllProducts().subscribe(
+        (data)=>{
+          this.holeProducts = data;
+          this.products = data;
+          console.log(this.products);
+        },
+       (error)=>{console.log(error);}
+    );
   }
 
   ngOnInit(): void {
@@ -33,7 +41,8 @@ export class AdminProductsComponent implements OnInit {
   searchValue:string = "";
   FindMatch(){
     console.log("search "+this.searchValue);
-    this.products = this.myService.GetProductByName(this.searchValue);
+    this.products = this.holeProducts.filter(prod=> 
+      prod.Name.toLowerCase().includes(this.searchValue.toLowerCase()));
   }
   
   ngOnChange(changes: SimpleChanges){
