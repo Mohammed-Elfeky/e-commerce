@@ -142,4 +142,55 @@
     font-weight: 700;
     src: local('Lato Bold'), local('Lato-Bold'), url(http://themes.googleusercontent.com/static/fonts/lato/v6/wkfQbvfT_02e2IWO3yYueQ.woff) format('woff');
   }
-  
+
+
+  .heading{
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    font-family: "Barlow Semi Condensed", sans-serif;
+  }
+  .cat{
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+  .info{
+    font-size: 17px;
+    font-weight: 400;
+    color: white;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    margin-bottom: 10px;
+  }
+  .cat:hover img{
+    transform: scale(1.2);
+  }
+  .cat:hover .inner{
+    opacity: 1;
+  }
+  .cat img{
+    width: 100%;
+    transition: all .5s ease-in-out;
+  }
+  .inner{
+    position: absolute;
+    top: 35%;
+    left: 20%;
+    opacity: 0;
+    transition: all .5s ease-out;
+  }
+  a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 10px 25px;
+  }
+
+  .layer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, .3);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }

@@ -4,9 +4,22 @@
             
        
         
-<div class="test">
-    <img src="https://placeimg.com/400/300/any" alt="Thumb" width="400" height="300" />
-    <div class="cap"><div>Thumbnail Caption</div></div>
+<div class="cat">
+    <img [src]="item.src" alt="" srcset="">
+    <div class="layer">
+
+    </div>
+<div class="inner">
+    <div class="heading">
+        {{item.name}}
+    </div>
+    <div class="info">
+       {{item.Description}}
+    </div>
+    <a routerLink="/User/category/{{item.catId}}">
+        Shop now
+    </a>
+</div>
 </div>
 
 
