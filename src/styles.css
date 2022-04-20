@@ -5,3 +5,14 @@ body{
 }
 @import "~bootstrap-icons/font/bootstrap-icons.css";
 
+
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: gray; 
+    border-radius: 10px;
+  }

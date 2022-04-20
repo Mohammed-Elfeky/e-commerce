@@ -12,7 +12,7 @@ import { JsonDatabaseService } from 'src/app/services/json-database.service';
 export class ProductsComponent implements OnInit {
   categoryId:number = 0;
   products:Product[] = [];
-
+  colors:any[]=[];
   constructor(private myService:JsonDatabaseService,private myRoute:ActivatedRoute) { 
     this.GetProducts();
     this.myRoute.params.subscribe( params => {
@@ -28,8 +28,17 @@ export class ProductsComponent implements OnInit {
   holeProductsList:Product[] = [];
   GetProducts(){
     this.myService.GetAllProducts().subscribe(
-        (data)=>{this.holeProductsList=data;
-      this.filterByCatId();},
+        (data)=>{
+          this.holeProductsList=data;
+          this.filterByCatId();
+          // fill colors array
+          this.holeProductsList.forEach(item=>{
+            if(!this.colors.includes(item.color)){
+              this.colors.push(item.color)
+            }
+          })
+          console.log(this.colors)
+    },
        (error)=>{console.log(error);}
     );
   }

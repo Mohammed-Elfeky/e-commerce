@@ -9,7 +9,9 @@ export class AsideComponent implements OnInit {
   @Input()
   categoryID:number=0;
   constructor() { }
-
+  @Input()
+  colors:any[]=[]
+  
   ngOnInit(): void {
   }
 

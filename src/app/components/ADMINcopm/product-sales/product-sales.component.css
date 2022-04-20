@@ -1,3 +1,8 @@
 .nav {
   background-color: #eceef1;
 }
+
+
+li{
+  cursor: pointer;
+}

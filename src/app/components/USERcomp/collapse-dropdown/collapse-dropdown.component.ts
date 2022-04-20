@@ -14,18 +14,8 @@ export class CollapseDropdownComponent implements OnInit {
   isOpen:boolean=false;
   @Input()
   title:string="";
-  colors:any=[
-    "gray",
-    "black",
-    "white",
-    "silver",
-    "red",
-    "yellow",
-    "brown",
-    "green",
-    "blue",
-    "burlywood"
-  ];
+  @Input()
+  colors:any[]=[]
   constructor(private myService:JsonDatabaseService,myRoute:ActivatedRoute) { }
 
   ngOnInit(): void {

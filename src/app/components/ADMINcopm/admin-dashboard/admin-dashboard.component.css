@@ -23,3 +23,6 @@ a {
   width: 4em;
   height: 4em;
 }
+a li{
+  cursor: pointer;
+}

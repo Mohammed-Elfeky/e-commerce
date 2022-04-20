@@ -21,6 +21,7 @@
   flex-wrap: wrap;
   align-content: flex-start;
   justify-content: flex-start;
+  overflow: auto;
 }
 .color_item {
   width: 30px;

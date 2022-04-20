@@ -62,7 +62,7 @@
       "Name": "Paper Trimmerr",
       "price": 25.66,
       "brand": "Amazon Basics",
-      "color": "#5cc615",
+      "color": "#000000",
       "numberOfAvailableItems": 20,
       "numberOfSoldItems": 5,
       "CategorieId": 1,
@@ -275,22 +275,22 @@
       ]
     },
     {
-      "id": 15,
       "Name": "Tommy",
       "price": 250,
       "brand": "Tommy Bahama",
-      "Description": "Tommy Bahama Flipshore 1/2 Zip",
-      "CategorieId": 2,
-      "color": "white",
-      "numberOfAvailableItems": 0,
+      "color": "#ed7f35",
+      "numberOfAvailableItems": 20,
       "numberOfSoldItems": 19,
-      "inSale": true,
+      "CategorieId": 2,
       "priceBeforeSale": 350,
+      "Description": "Tommy Bahama Flipshore 1/2 Zip",
+      "inSale": true,
       "images": [
         "assets/images/Tommy1.jpg",
         "assets/images/Tommy2.jpg",
         "assets/images/Tommy3.jpg"
-      ]
+      ],
+      "id": 15
     },
     {
       "id": 16,
