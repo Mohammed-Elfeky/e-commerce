@@ -165,9 +165,7 @@
   .cat:hover img{
     transform: scale(1.2);
   }
-  .cat:hover .inner{
-    opacity: 1;
-  }
+
   .cat img{
     width: 100%;
     transition: all .5s ease-in-out;
@@ -176,7 +174,6 @@
     position: absolute;
     top: 35%;
     left: 20%;
-    opacity: 0;
     transition: all .5s ease-out;
   }
   a{
