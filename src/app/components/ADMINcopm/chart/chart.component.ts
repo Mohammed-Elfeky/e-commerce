@@ -30,7 +30,6 @@ async getData(){
   await this.db.GetAllProducts().subscribe(
       (data)=>{
         this.products = data; 
-        console.log(data);
       },
       (err)=>console.log(err)
     )
@@ -49,13 +48,11 @@ calcCategorySales(){
     this.categories.forEach(cat => {
       this.categorySales[cat.id-1] = 0;
     });
-      console.log(this.categorySales);
 
     this.products.forEach(prod => {
       this.categorySales[prod.CategorieId-1] += Number(prod.numberOfSoldItems);
-      console.log(prod.numberOfSoldItems+" "+prod.id);
+      //console.log(prod.numberOfSoldItems+" "+prod.id);
     });
-    console.log(this.categorySales);
 }
 
 toLabels(before:any){
