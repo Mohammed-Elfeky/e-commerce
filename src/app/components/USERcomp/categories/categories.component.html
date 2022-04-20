@@ -1,4 +1,10 @@
 
 
 <app-slider></app-slider>
-<app-category-card></app-category-card>
+<div class="container">
+    <div class="row my-4">
+        <div *ngFor="let item of dataArr" class="col-12 col-md-6 mb-4">
+            <app-category-card [item]="item"></app-category-card>
+        </div>
+    </div>
+</div>
