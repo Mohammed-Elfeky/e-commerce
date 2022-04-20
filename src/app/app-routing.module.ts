@@ -9,9 +9,11 @@ import { ProductFormComponent } from './components/ADMINcopm/product-form/produc
 import { ProductsComponent } from './components/USERcomp/products/products.component';
 import { UserComponent } from './components/USERcomp/user/user.component';
 import { ProductSalesComponent } from './components/ADMINcopm/product-sales/product-sales.component';
+import { UserViewComponent } from './components/user-view/user-view.component';
 
 let routes:Routes=[
-  {path:'',redirectTo:'User',pathMatch:'full'},
+  {path:'',redirectTo:'ChooseView',pathMatch:'full'},
+  {path:'ChooseView',component:UserViewComponent},
   {path:'User',component:UserComponent,
     children:[
       {path: '', redirectTo: 'category',pathMatch:'full'},
@@ -27,7 +29,7 @@ let routes:Routes=[
       {path:'AddProduct',component:ProductFormComponent},
       {path:'EditProduct/:id',component:ProductFormComponent} 
     ]},
-  {path: '**', redirectTo:'User',pathMatch:'full'}
+  {path: '**', redirectTo:'ChooseView',pathMatch:'full'}
 ]
 
 @NgModule({

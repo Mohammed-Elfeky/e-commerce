@@ -1,21 +1,50 @@
-<div>
+<div class="border border-secondary">
+  <div class="chartTypes">
+    <ul class="nav nav-tabs justify-content-center p-2">
+      <li class="nav-item" (click)="changeId(0)">
+        <a
+          class="nav-link"
+          aria-current="page"
+          [ngClass]="{ active: char_index == 0 }"
+        >
+          <span class="iconify" data-icon="bi:bar-chart-line-fill"></span>
+          &nbsp;Bar Chart
+        </a>
+      </li>
+      <li class="nav-item" (click)="changeId(1)">
+        <a class="nav-link" [ngClass]="{ active: char_index == 1 }">
+          <span class="iconify" data-icon="bxs:doughnut-chart"></span>
+          &nbsp;Doughnut Chart
+        </a>
+      </li>
+      <li class="nav-item" (click)="changeId(2)">
+        <a class="nav-link" [ngClass]="{ active: char_index == 2 }">
+          <span class="iconify" data-icon="fontisto:pie-chart-2"></span>
+          &nbsp;Pie Chart
+        </a>
+      </li>
+      <li class="nav-item" (click)="changeId(3)">
+        <a class="nav-link" [ngClass]="{ active: char_index == 3 }">
+          <span class="iconify" data-icon="fa:pie-chart"></span>
+          &nbsp;Polar Area Chart
+        </a>
+      </li>
+      <li class="nav-item" (click)="changeId(4)">
+        <a class="nav-link" [ngClass]="{ active: char_index == 4 }">
+          <span
+            class="iconify"
+            data-icon="ant-design:radar-chart-outlined"
+          ></span>
+          &nbsp;Radar Chart
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="charts p-3"></div>
   <div>
     <canvas id="ctx2">{{ soldChart }}</canvas>
   </div>
-  <div >
-    <canvas id="ctx3">{{ availableChart }}</canvas>
-  </div>
-  <div class="row mt-4">
-    <div class="col-lg-6 text-center">
-      <small>number of sold products</small>
-      <canvas id="ctx4">{{ doughnut }}</canvas>
-    </div>
-
-    <div class="col-lg-6">
-      <canvas id="ctx5">{{ polarArea }}</canvas>
-    </div>
-  </div>
   <div>
-    <canvas id="ctx6">{{ radar }}</canvas>
+    <canvas id="ctx3">{{ availableChart }}</canvas>
   </div>
 </div>

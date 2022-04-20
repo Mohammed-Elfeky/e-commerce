@@ -1,8 +1,8 @@
 import { Component, Input, OnInit, SimpleChange, SimpleChanges } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
 import Chart from 'chart.js/auto';
-import { Category, Product } from 'src/app/app.component';
+import { Product } from 'src/app/app.component';
 import { JsonDatabaseService } from 'src/app/services/json-database.service';
+import { ChartType } from 'chart.js';
 
 @Component({
   selector: 'app-product-sales',
@@ -17,23 +17,26 @@ export class ProductSalesComponent implements OnInit {
   polarArea:any;
   radar:any;
 
-
   colors:any;
   data:any;
 
   availableProducts:number[]=[];
   soldProducts:number[]=[];
+  holeProductsList:Product[] = [];
   products: Product[] = [];
-
-  subscription:any;
+  
+  chartTypes:ChartType[] = [
+    'bar',
+    'doughnut',
+    'pie',
+    'polarArea',
+    'radar'
+  ];
+  char_index:number = 0;
 
   @Input() cat_id:number = 1;
 
   constructor(private db:JsonDatabaseService) { 
-    if (this.soldChart)
-    this.soldChart.destroy();
-    if(this.availableChart)
-    this.availableChart.destroy();
   }
 
   ngOnInit(): void {  
@@ -41,47 +44,58 @@ export class ProductSalesComponent implements OnInit {
   }
 
 async getData(){
-  this.subscription = await this.db.GetProductsInCatagory(this.cat_id).subscribe(
+  await this.db.GetAllProducts().subscribe(
       (data)=>{
-        this.products = data;  
-        this.data = this.toLabels(data);
-        this.getAvailable_SoldProducts();  
-        this.drawChart();
-        this.drawdoughnut();
-        this.drawPolarArea();
-        this.drawRadar()
+        this.holeProductsList = data; 
+        this.prepareData();
       },
       (err)=>console.log(err)
-  );
-  // await this.db.GetAllProducts().subscribe(
-  //     (data)=>{
-  //       this.products = data;  
-  //       this.data = this.toLabels(data);
-  //       this.getAvailable_SoldProducts();  
-  //       this.drawChart();
-  //     },
-  //     (err)=>console.log(err)
-  //   )
+    )
 }
 
+prepareData(){
+  this.products = this.holeProductsList.filter(prod => prod.CategorieId == this.cat_id)
+  this.data = this.toLabels(this.products);
+  this.getAvailable_SoldProducts();
+  this.drawChart();
+}
+generateLightColorHex() {
+  let color = "#";
+  for (let i = 0; i < 3; i++)
+    color += ("0" + Math.floor(((1 + Math.random()) * Math.pow(16, 2)) / 2).toString(16)).slice(-2);
+  return color;
+}
 getAvailable_SoldProducts(){
   this.soldProducts = [];
   this.availableProducts = [];
   this.colors=[]
-  this.products.forEach((product: any) => {
+  this.products.forEach((product: Product) => {
     this.availableProducts.push(product.numberOfAvailableItems);
     this.soldProducts.push(product.numberOfSoldItems);
-    this.colors.push("#"+Math.floor(Math.random()*16777215).toString(16))
+    this.colors.push(this.generateLightColorHex())
+    //this.colors.push("#"+Math.floor(Math.random()*16777215).toString(16))
   });
 }
 
 toLabels(before:any){
   return before.map((ele:any)=>ele["Name"])
 }
-
+charTypeFunc(){
+  return this.chartTypes[this.char_index];
+}
+changeId(index:number){
+  this.char_index = index;
+  this.soldChart.destroy();
+  this.availableChart.destroy();
+  if(index != 4)
+    this.drawChart();
+  else
+    this.drawRadar();
+}
 drawChart(){
+  console.log(this.charTypeFunc());
     this.soldChart = new Chart("ctx2", {
-        type: 'bar',
+        type: this.charTypeFunc(),
         data: {
             labels: this.data,
             datasets: [{
@@ -100,11 +114,20 @@ drawChart(){
                     minRotation: 90
                 }
             }
-        }
+        }, 
+        plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Sold Products Chart'
+      }
+    }
         }
     });
     this.availableChart = new Chart("ctx3", {
-        type: 'bar',
+        type: this.charTypeFunc(),
         data: {
             labels: this.data,
             datasets: [{
@@ -123,69 +146,25 @@ drawChart(){
                     minRotation: 90
                 }
             }
-        }
+        },
+         plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Available Products'
+      }
+    }
         }
     });
     
   }
 
 
-drawdoughnut(){
-  this.doughnut = new Chart("ctx4", {
-    type: 'doughnut',
-    data: {
-        labels: this.data,
-        datasets: [{
-            label: '# of sold Products',
-            data: this.soldProducts,
-            backgroundColor:this.colors
-        }]
-    },
-    options: {
-      responsive:true,
-      scales: {
-        xAxes: {
-            ticks: {
-                autoSkip: false,
-                maxRotation: 90,
-                minRotation: 90
-            }
-        }
-    }
-    }
-});
-}
-
-
-drawPolarArea(){
-  this.doughnut = new Chart("ctx5", {
-    type: 'polarArea',
-    data: {
-        labels: this.data,
-        datasets: [{
-            label: '# of sold Products',
-            data: this.soldProducts,
-            backgroundColor:this.colors
-        }]
-    },
-    options: {
-      responsive:true,
-      scales: {
-        xAxes: {
-            ticks: {
-                // autoSkip: false,
-                // maxRotation: 90,
-                // minRotation: 90
-            }
-        }
-    }
-    }
-});
-}
-
 
 drawRadar(){
-  this.radar = new Chart("ctx6", {
+  this.soldChart = new Chart("ctx2", {
     type: 'radar',
     data: {
         labels: this.data,
@@ -214,23 +193,18 @@ drawRadar(){
       ]
     },
     options: {
-      responsive:true,
-      scales: {
-        xAxes: {
-            ticks: {
-                // autoSkip: false,
-                // maxRotation: 90,
-                // minRotation: 90
-            }
-        }
+      responsive:true, plugins: {
+      legend: {
+        position: 'top',
+      },
+      title: {
+        display: true,
+        text: 'Sold VS Available Products'
+      }
     }
     }
 });
 }
-
-  //  ngOnDestroy() {
-  //       this.subscription.unsubscribe()
-  //       this.soldChart.destroy();
-  //       this.availableChart.destroy();
-  //   }
 }
+
+

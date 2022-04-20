@@ -211,7 +211,7 @@
       "CategorieId": 2,
       "color": "red",
       "numberOfAvailableItems": 20,
-      "numberOfSoldItems": 20,
+      "numberOfSoldItems": 15,
       "inSale": true,
       "priceBeforeSale": 150,
       "images": [
@@ -228,8 +228,8 @@
       "Description": "Yeokou Men's Shawl Collar Cardigans Slim Fit Button Cable Knit Black Sweater Pockets",
       "CategorieId": 2,
       "color": "red",
-      "numberOfAvailableItems": 20,
-      "numberOfSoldItems": 20,
+      "numberOfAvailableItems": 7,
+      "numberOfSoldItems": 10,
       "inSale": false,
       "priceBeforeSale": 250,
       "images": [
@@ -246,8 +246,8 @@
       "Description": "RAGEMALL Mens Long Cardigan Open Front Draped Lightweight Hooded Sweater with Pockets",
       "CategorieId": 2,
       "color": "yellow",
-      "numberOfAvailableItems": 20,
-      "numberOfSoldItems": 20,
+      "numberOfAvailableItems": 0,
+      "numberOfSoldItems": 30,
       "inSale": false,
       "priceBeforeSale": 350,
       "images": [
@@ -264,8 +264,8 @@
       "Description": "Perfect Slim Fit V Neck Sweaters for Men | Lightweight Breathable Mens Sweater | Soft Fitted V-Neck Pullover for Men",
       "CategorieId": 2,
       "color": "red",
-      "numberOfAvailableItems": 20,
-      "numberOfSoldItems": 20,
+      "numberOfAvailableItems": 34,
+      "numberOfSoldItems": 7,
       "inSale": false,
       "priceBeforeSale": 150,
       "images": [
@@ -283,7 +283,7 @@
       "CategorieId": 2,
       "color": "white",
       "numberOfAvailableItems": 0,
-      "numberOfSoldItems": 20,
+      "numberOfSoldItems": 19,
       "inSale": true,
       "priceBeforeSale": 350,
       "images": [
@@ -300,8 +300,8 @@
       "Description": "Pioneer Camp Men's Cardigan Sweaters Full Zip Up Stand Collar Slim Fit Casual Knitted Sweater with 2 Front Pockets",
       "CategorieId": 2,
       "color": "black",
-      "numberOfAvailableItems": 20,
-      "numberOfSoldItems": 20,
+      "numberOfAvailableItems": 27,
+      "numberOfSoldItems": 5,
       "inSale": false,
       "priceBeforeSale": 150,
       "images": [
@@ -318,8 +318,8 @@
       "Description": "Robert Graham Hervey, Long-Sleeve Quarter-Zip Sweater for Men",
       "CategorieId": 2,
       "color": "gray",
-      "numberOfAvailableItems": 20,
-      "numberOfSoldItems": 20,
+      "numberOfAvailableItems": 3,
+      "numberOfSoldItems": 28,
       "inSale": true,
       "priceBeforeSale": 550,
       "images": [
@@ -337,7 +337,7 @@
       "CategorieId": 2,
       "color": "brown",
       "numberOfAvailableItems": 0,
-      "numberOfSoldItems": 20,
+      "numberOfSoldItems": 50,
       "inSale": false,
       "priceBeforeSale": 550,
       "images": [
@@ -354,8 +354,8 @@
       "Description": "Esobo Men's Shawl Collar Cardigan Sweater Multi-Color Button Down Knitted Sweaters with Pockets",
       "CategorieId": 2,
       "color": "green",
-      "numberOfAvailableItems": 20,
-      "numberOfSoldItems": 20,
+      "numberOfAvailableItems": 15,
+      "numberOfSoldItems": 10,
       "inSale": true,
       "priceBeforeSale": 250,
       "images": [
@@ -373,7 +373,7 @@
       "CategorieId": 2,
       "color": "red",
       "numberOfAvailableItems": 0,
-      "numberOfSoldItems": 20,
+      "numberOfSoldItems": 22,
       "inSale": true,
       "priceBeforeSale": 150,
       "images": [

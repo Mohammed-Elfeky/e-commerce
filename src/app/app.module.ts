@@ -26,6 +26,7 @@ import { AdminAsideComponent } from './components/ADMINcopm/admin-aside/admin-as
 import { UserComponent } from './components/USERcomp/user/user.component';
 import { ChartComponent } from './components/ADMINcopm/chart/chart.component';
 import { ProductSalesComponent } from './components/ADMINcopm/product-sales/product-sales.component';
+import { UserViewComponent } from './components/user-view/user-view.component';
 
 
 
@@ -51,7 +52,8 @@ import { ProductSalesComponent } from './components/ADMINcopm/product-sales/prod
     AdminAsideComponent,
     UserComponent,
     ChartComponent,
-    ProductSalesComponent
+    ProductSalesComponent,
+    UserViewComponent
   ],
   entryComponents:[
     ProductSalesComponent

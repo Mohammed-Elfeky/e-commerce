@@ -18,11 +18,18 @@ export class AdminDashboardComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  componentCreated = false;
   changeId(id:number){
-    this.catId = id;
-    this.link = `./prodCatSales/${this.catId}`;
-    console.log(`./prodCatSales/${this.catId}`);
-    this.createComponent();
+    if(id === this.catId && this.componentCreated){
+      this.destroyComponent()
+      this.catId = 0;
+      this.componentCreated = false;
+    }else{
+      this.catId = id;
+      this.link = `./prodCatSales/${this.catId}`;
+      this.createComponent();
+      this.componentCreated = true;
+    }
   }
 
 
@@ -35,7 +42,7 @@ export class AdminDashboardComponent implements OnInit {
     createComponent() {
         // Clear the container.
         this.alertContainer.clear();
-        // Create a factory for MessageComponent.
+        // Create a factory for ProductSalesComponent.
         const factory = this.resolver.resolveComponentFactory(ProductSalesComponent);
         // Create a component using the factory.
         this.componentRef = this.alertContainer.createComponent(factory);
