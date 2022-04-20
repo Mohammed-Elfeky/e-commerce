@@ -45,22 +45,22 @@
       "id": 1
     },
     {
-      "id": 2,
-      "CategorieId": 1,
+      "Name": "File Organizer",
+      "price": 40,
+      "brand": "Amazon Basics",
       "color": "black",
       "numberOfAvailableItems": 15,
       "numberOfSoldItems": 10,
-      "inSale": true,
+      "CategorieId": 1,
       "priceBeforeSale": 40,
+      "Description": "File organizer for storing documents, reports, personal paperwork, and more. Sturdy corrugated cardboard construction",
+      "inSale": true,
       "images": [
         "assets/images/fileOrganizer_1.jpg",
         "assets/images/fileOrganizer_2.jpg",
         "assets/images/fileOrganizer_3.jpg"
       ],
-      "Name": "File Organizer",
-      "price": 38.18,
-      "brand": "Amazon Basics",
-      "Description": "File organizer for storing documents, reports, personal paperwork, and more. Sturdy corrugated cardboard construction"
+      "id": 2
     },
     {
       "Name": "Paper Trimmerr",

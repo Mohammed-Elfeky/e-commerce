@@ -45,12 +45,15 @@ async getData(){
 }
 
 calcCategorySales(){
+  // intialize Category Sales
     this.categories.forEach(cat => {
       this.categorySales[cat.id-1] = 0;
     });
 
+    //calculate category sales
     this.products.forEach(prod => {
-      this.categorySales[prod.CategorieId-1] += Number(prod.numberOfSoldItems);
+      //add each product sales to its category index
+      this.categorySales[prod.CategorieId-1] += Number(prod.numberOfSoldItems*prod.price);
       //console.log(prod.numberOfSoldItems+" "+prod.id);
     });
 }

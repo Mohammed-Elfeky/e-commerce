@@ -28,10 +28,10 @@ export class AdminProductsComponent implements OnInit {
   }
   confirmDelete = false;
   targetProduct = 0;
-  async deleteProduct(){
+  deleteProduct(){
     console.log("delete pressed");
-    await this.myService.DeleteProduct(this.targetProduct).subscribe(
-      () => {
+    this.myService.DeleteProduct(this.targetProduct).subscribe(
+    () => {
         console.log(`Product has been Deleted`)
         window.location.reload();
     },
@@ -45,9 +45,9 @@ export class AdminProductsComponent implements OnInit {
       prod.Name.toLowerCase().includes(this.searchValue.toLowerCase()));
   }
   
-  ngOnChange(changes: SimpleChanges){
-    if(!changes['product'].firstChange){
-      console.log("products list updated");
-    }
-  }
+  // ngOnChange(changes: SimpleChanges){
+  //   if(!changes['product'].firstChange){
+  //     console.log("products list updated");
+  //   }
+  // }
 }
