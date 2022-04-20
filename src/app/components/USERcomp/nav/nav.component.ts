@@ -27,7 +27,6 @@ export class NavComponent implements OnInit {
     }
   }
   whenBlur(){
-    console.log("lklkhs")
    this.isSearchBoxVisible= false;
   }
   searchValue:string = "";
@@ -35,7 +34,7 @@ export class NavComponent implements OnInit {
 
 
   goSearch(){
-    this.router.navigate(['/User/category/search', {term: this.searchValue}]);
+    // this.router.navigate(['/User/category/search', {term: this.searchValue}]);
   }
 
   RealTimeSearch(){
@@ -51,6 +50,7 @@ export class NavComponent implements OnInit {
          (data)=>this.commingData=data
       )
   }
+
 
 
 }
