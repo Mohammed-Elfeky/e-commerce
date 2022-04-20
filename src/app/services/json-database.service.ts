@@ -49,7 +49,6 @@ export class JsonDatabaseService {
     return this.myHttp.get<product[]>(`${this.BaseURL}/Products?CategorieId=${_CategorieId}`);
   }
   GetProductByName(_name:string){
-    console.log(`${this.BaseURL}/Products?Name_like=.*${_name}.*`);
     return this.myHttp.get<product[]>(`${this.BaseURL}/Products?Name_like=.*${_name}.*`);
   }
   GetProductsInCatagoryByColor(_CategorieId:number,_color:string){

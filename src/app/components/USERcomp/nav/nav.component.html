@@ -31,18 +31,38 @@
       <span style="color: #6768ab">SHOP</span>
     </a>
   </div>
-
+  <!-- (change)="goSearch($event)" -->
   <form class="form-inline col-sm">
-    <form>
+    <form style="position: relative; "   >
+      <div class="searchBox" [ngStyle]="{opacity: isSearchBoxVisible ? '1' : '0'}" >
+        <div *ngFor="let item of commingData">
+          
+        <a routerLink="/User/product/{{item.id}}"  >
+            <div class="search_item">
+             <img
+                  [src]="item.images[0]" 
+                  alt="" 
+                  srcset=""
+                  >
+              <div class="item_name">
+                    {{item.Name}}
+              </div>
+            </div>   
+          </a>
+          </div>
+      </div>
       <input
         class="form-control"
         type="text"
         placeholder="Search"
         [(ngModel)]="searchValue"
         [ngModelOptions]="{ standalone: true }"
+        (input)="RealTimeSearch()"
         (change)="goSearch()"
-      />
-    </form>
+        (blur)="whenBlur()"
+        />
+      </form>
+      
 
     <button type="submit" class="btn"><i class="fa fa-search"></i></button>
     <button type="submit" class="btn"><i class="fa fa-user"></i></button>
