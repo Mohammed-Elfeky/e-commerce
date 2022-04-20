@@ -11,6 +11,7 @@ import { JsonDatabaseService } from 'src/app/services/json-database.service';
 })
 export class ProductsComponent implements OnInit {
   categoryId:number = 0;
+  holeProductsList:Product[] = [];
   products:Product[] = [];
   colors:any[]=[];
   constructor(private myService:JsonDatabaseService,private myRoute:ActivatedRoute) { 
@@ -25,7 +26,6 @@ export class ProductsComponent implements OnInit {
   }
 
 
-  holeProductsList:Product[] = [];
   GetProducts(){
     this.myService.GetAllProducts().subscribe(
         (data)=>{

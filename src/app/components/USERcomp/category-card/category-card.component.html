@@ -1,26 +1,13 @@
-
-   
-    
-            
-       
-        
 <div class="cat">
-    <img [src]="item.src" alt="" srcset="">
-    <div class="layer">
-
-    </div>
-<div class="inner">
+  <img [src]="item.src" alt="" srcset="" />
+  <div class="layer"></div>
+  <div class="inner">
     <div class="heading">
-        {{item.name}}
+      {{ item.Name }}
     </div>
     <div class="info">
-       {{item.Description}}
+      {{ item.Description }}
     </div>
-    <a routerLink="/User/category/{{item.catId}}">
-        Shop now
-    </a>
+    <a routerLink="/User/category/{{ item.id }}"> Shop now </a>
+  </div>
 </div>
-</div>
-
-
-

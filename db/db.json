@@ -3,22 +3,26 @@
     {
       "id": 1,
       "Name": "Office Supplies",
-      "Description": "used regularly in an office environment to perform departmental personnel's daily work assignments."
+      "Description": "used regularly in an office environment to perform departmental personnel's daily work assignments.",
+      "src": "assets/images/cats/1.jpg"
     },
     {
       "id": 2,
       "Name": "Men's Sweaters",
-      "Description": "high quality men's sweaters made of cotton"
+      "Description": "high quality men's sweaters made of cotton",
+      "src": "assets/images/cats/2.jpeg"
     },
     {
       "id": 3,
       "Name": "Furniture",
-      "Description": "furniture category"
+      "Description": "furniture category",
+      "src": "assets/images/cats/3.jpg"
     },
     {
       "id": 4,
       "Name": "Lap_tops",
-      "Description": "Computer_Electronic"
+      "Description": "Computer_Electronic",
+      "src": "assets/images/cats/4.jpg"
     }
   ],
   "Products": [
