@@ -9,7 +9,6 @@ import { ProductSalesComponent } from '../product-sales/product-sales.component'
 })
 export class AdminDashboardComponent implements OnInit {
   catId:number = 0;
-  link:string = `./prodCatSales/${this.catId}`;
 
   constructor(private resolver: ComponentFactoryResolver) {
 
@@ -26,7 +25,6 @@ export class AdminDashboardComponent implements OnInit {
       this.componentCreated = false;
     }else{
       this.catId = id;
-      this.link = `./prodCatSales/${this.catId}`;
       this.createComponent();
       this.componentCreated = true;
     }
@@ -37,6 +35,7 @@ export class AdminDashboardComponent implements OnInit {
   @ViewChild('TextContainer', {
         read: ViewContainerRef
     })
+
     alertContainer!: ViewContainerRef;
     componentRef!: ComponentRef < ProductSalesComponent > ;
     createComponent() {
