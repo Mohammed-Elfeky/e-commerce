@@ -23,7 +23,8 @@ interface product{
 interface category{
   "id": number,
   "Name": string,
-  "Description": string
+  "Description": string,
+  "src":string
 }
 
 
