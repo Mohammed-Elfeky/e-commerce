@@ -10,7 +10,7 @@ import { JsonDatabaseService } from 'src/app/services/json-database.service';
 export class CollapseDropdownComponent implements OnInit {
   @Input()
   categoryID:number=0;
-  rangeVal:any=50;
+  rangeVal:any=12000;
   isOpen:boolean=false;
   @Input()
   title:string="";

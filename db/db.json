@@ -117,22 +117,22 @@
       "Description": "Upgraded mini projector equipped with 2000:1 contrast ratio, supported 1080p resolution, brings you a 35% brighter images than similar projectors in market. It provides you with a premium home cinema experience with the bigger screen and clearer image."
     },
     {
-      "id": 6,
-      "CategorieId": 1,
+      "Name": "Thermal Laminator",
+      "price": 21.83,
+      "brand": "Amazon Basics",
       "color": "white",
-      "numberOfAvailableItems": 6,
+      "numberOfAvailableItems": 20,
       "numberOfSoldItems": 4,
-      "inSale": false,
+      "CategorieId": 1,
       "priceBeforeSale": 25,
+      "Description": "Laminates documents up to 9 inches wide; compatible with letter, legal, business-card, and photo-size papers. Color:white.",
+      "inSale": false,
       "images": [
         "assets/images/thermal_1.jpg",
         "assets/images/thermal_2.jpg",
         "assets/images/thermal_3.jpg"
       ],
-      "Name": "Thermal Laminator Machine",
-      "price": 21.83,
-      "brand": "Amazon Basics",
-      "Description": "Laminates documents up to 9 inches wide; compatible with letter, legal, business-card, and photo-size papers. Color:white."
+      "id": 6
     },
     {
       "id": 7,
@@ -729,22 +729,22 @@
       "Description": "Lenovo V15 IML Laptop - Intel Core i5-10210U, 8GB RAM, 1TB HDD, Intel UHD Graphics, 15.6"
     },
     {
-      "id": 40,
-      "Name": "Lenovo IdeaPad",
-      "price": 12490,
-      "CategorieId": 4,
-      "brand": "Lenovo",
-      "color": "silver",
-      "numberOfAvailableItems": 9,
-      "numberOfSoldItems": 7,
-      "inSale": false,
-      "priceBeforeSale": 12490,
+      "Name": "gdffd",
+      "price": 520,
+      "brand": "fdds",
+      "color": "",
+      "numberOfAvailableItems": 20,
+      "numberOfSoldItems": 0,
+      "CategorieId": "2",
+      "priceBeforeSale": 800,
+      "Description": "fdssf",
+      "inSale": true,
       "images": [
-        "assets/images/4-10-1.jpg",
-        "assets/images/4-10-2.jpg",
-        "assets/images/4-10-3.jpg"
+        "assets/images/city.png",
+        "assets/images/demo-image.jpg",
+        "assets/images/demo-image.png"
       ],
-      "Description": "Lenovo IdeaPad 5 Laptop - 11th Intel Core i5-1135G7, 8GB RAM , 1TB HDD + 256GB SSD, Intel Iris Xe Graphics"
+      "id": 40
     }
   ]
 }
