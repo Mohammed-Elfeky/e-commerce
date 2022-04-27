@@ -33,8 +33,8 @@ export class AdminDashboardComponent implements OnInit {
 
   /// dynamic create destroy component
   @ViewChild('TextContainer', {
-        read: ViewContainerRef
-    })
+    read: ViewContainerRef
+  })
 
     alertContainer!: ViewContainerRef;
     componentRef!: ComponentRef < ProductSalesComponent > ;
